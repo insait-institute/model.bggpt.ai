@@ -127,7 +127,8 @@
 	
    <div class="container">
       <h1 style="margin-bottom:0; margin-top:4rem;" id="blogen">INSAIT releases state-of-the-art language models for Bulgarian setting a new standard for open national LLMs</h1>
-     
+	  <p class="date" style="margin-bottom:2rem;fontr-size:110%;margin-left:5px;">This is the first time open LLMs of practical size for a target language surpass in performance much 
+	  larger open models while being competitive for chatting with paid platforms such as OpenAI and Anthropic.</p>	  
       <p class="date" style="margin-bottom:2rem;fontr-size:110%;margin-left:5px;">November 19, 2024</p>
 
       <p>INSAIT is delighted to announce the release of three new state-of-the-art AI models, a 27 billion, a 9 billion, and a small 2.6 billion parameter models,
@@ -135,11 +136,13 @@
 	  while retaining English language capabilities. Beyond benchmarks, INSAIT’s 27B model significantly surpasses GPT-4o-mini and rivals GPT-4o in Bulgarian chat performance,
 	  according to GPT-4o itself used as a judge. We observe similar results with Anthropic’s Claude Haiku and Sonnet paid models.</p>
 	  
-	  <p>INSAIT’s three new models are built on top of Google’s Gemma 2 family of open models and were pre-trained on around 100 
+	  <p>INSAIT’s three new models are built on top of Google’s Gemma 2 family of open models and are pre-trained on around 100 
 	  billion tokens (85B in Bulgarian) and instruction-fine-tuned on a new specially-constructed Bulgarian instruction dataset using 
-	  a novel training method based on model merging that INSAIT invented and presented at <a href="#ref-emnlp-19-nov">EMNLP’24 last week [1]</a>.</p>.
+	  a novel training method based on model merging that INSAIT invented and presented at <a href="#ref-emnlp-19-nov">EMNLP’24 last week [1]</a>.</p>
 
       <h2>New Research: Avoiding Catastrophic forgetting via Branch-and-Merge</h2>
+	  
+	  <object type="image/svg+xml" data="/assets/img/bggpt_merge_nov19.svg"></object>
 	  
 	  <p>The key to the performance of the new line of BgGPT models is a novel branch and merge algorithm we presented at <a href="#ref-emnlp-19-nov">EMNLP’24 [1]</a>. 
 	  This method ensures the model can learn new skills (e.g., Bulgarian) while retaining old ones (e.g., English, mathematics, few-shot capabilities) 
