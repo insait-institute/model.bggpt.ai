@@ -136,80 +136,120 @@
     </nav>
 	
    <div class="container">
-      <h1 style="margin-bottom:0;" id="blogen">INSAIT releases state-of-the-art language models for Bulgarian setting a new standard for open national LLMs</h1>
-	  <p class="date" style="margin-top:1rem;font-size:155%;color:gray;">This is the first time open LLMs of practical size for a target language surpass in performance much 
-	  larger open models while being competitive for chatting with paid platforms such as OpenAI and Anthropic.</p>	  
-      <p class="date" style="margin-bottom:2rem;font-size:110%;">November 19, 2024</p>
+      <h1 style="margin-bottom:0;" lang="en" id="blogen2">INSAIT releases state-of-the-art language models for Bulgarian setting a new standard for open national LLMs</h1>
+	  <h1 style="margin-bottom:0;" lang="bg" id="blogen2">INSAIT с нови езикови модели за български, установявайки нов стандарт за големи езикови модели на национално ниво</h1>
+	  <p class="date" style="margin-top:1rem;font-size:155%;color:gray;" lang="en" >This is the first time open LLMs of practical size for a target language surpass in performance much 
+	  larger open models while being competitive for chatting with paid platforms such as OpenAI and Anthropic.</p>
+	  <p class="date" style="margin-top:1rem;font-size:155%;color:gray;" lang="bg">За пръв път отворени езикови модели с практичен размер за конкретен език надминават по ефективност много по-големи отворени модели, като същевременно са конкурентоспособни за чат с платени платформи като OpenAI и Anthropic.</p>	  
+      <p class="date" style="margin-bottom:2rem;font-size:110%;" lang="en" >November 19, 2024</p>
+	  <p class="date" style="margin-bottom:2rem;font-size:110%;" lang="bg" >19 ноември 2024 г</p>
+	  
 
-      <p>INSAIT is delighted to announce the release of three new state-of-the-art AI models, a 27 billion, a 9 billion, and a small 2.6 billion parameter models,
+      <p lang="en" >INSAIT is delighted to announce the release of three new state-of-the-art AI models, a 27 billion, a 9 billion, and a small 2.6 billion parameter models,
 	  targeting the Bulgarian language (called BgGPT). The 27B and 9B models demonstrate unprecedented performance in Bulgarian, outpacing much larger ones,
 	  while retaining English language capabilities. Beyond benchmarks, INSAIT’s 27B model significantly surpasses GPT-4o-mini and rivals GPT-4o in Bulgarian chat performance,
 	  according to GPT-4o itself used as a judge. We observe similar results with Anthropic’s Claude Haiku and Sonnet paid models.</p>
-	  
-	  <p>INSAIT’s three new models are built on top of Google’s Gemma 2 family of open models and were pre-trained on around 100 billion tokens (85 billion in Bulgarian) 
+      <p lang="bg">INSAIT обявява пускането на три нови AI модела на световно ниво -  27 милиарден (BgGPT 27B), 9 милиарден (BgGPT 9B) и малък модел с 2.6 милиарда параметъра (BgGPT 2.6B), специално за български език. 
+	  Моделите BgGPT 27B и 9B демонстрират безпрецедентни резултати върху български тестове, надминавайки много по-големи модели, като същевременно запазват способностите си на английски език. 
+	  Отвъд резултатите на тестовете за  български, допълнително тествахме и способностите на моделите за чат. 
+	  Според самия GPT-4o, използван като съдия, BgGPT 27B значително надминава GPT-4o-mini и се конкурира с GPT-4o при чат на български. 
+	  Наблюдаваме подобни резултати с платените модели на Anthropic – Claude Haiku и Claude Sonnet.</p>
+
+	  <p lang="en">INSAIT’s three new models are built on top of Google’s Gemma 2 family of open models and were pre-trained on around 100 billion tokens (85 billion in Bulgarian) 
 	  using the Branch-and-Merge continual pre-training strategy that INSAIT invented and presented at <a href="#ref-emnlp-19-nov">EMNLP’24 last week [1]</a>. 
 	  Further, the models were instruction-fine-tuned on a novel Bulgarian instruction dataset created using real-world conversations collected from <a href="https://chat.bggpt.ai/">https://chat.bggpt.ai/</a>.</p>
+	  <p lang="bg">Моделите на INSAIT са базирани на семейството от отворени модели на Google – Gemma 2 и са обучени на около 100 милиарда токена (85 млрд. от тях на български). 
+	  Обучението е извършено с помощта иновативен метод, основан на сливане на модели, който INSAIT изобрети, описа и представи на <a href="#ref-emnlp-19-nov">EMNLP’24 миналата седмица [1]</a>. 
+	  Допълнително моделите са специално настроени, използвайки български набор от данни с инструкции от чат приложението <a href="https://chat.bggpt.ai/">https://chat.bggpt.ai/</a>. </p>
 
-      <h2>New Research: Avoiding Catastrophic forgetting via Branch-and-Merge</h2>
+      <h2 lang="en" >New Research: Avoiding Catastrophic forgetting via Branch-and-Merge</h2>
+	  <h2 lang="bg" >Справяне с катастрофално забравяне чрез разклоняване и сливане</h2>
 	  
-	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;" data="/assets/img/bggpt_merge_nov19.svg"></object></div>
+	  <div lang="en" style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;" data="/assets/img/bggpt_merge_nov19.svg"></object></div>
 	  
-	  <p>The key to the performance of the new line of BgGPT models is a novel branch and merge algorithm we presented at <a href="#ref-emnlp-19-nov">EMNLP’24 [1]</a>. 
-	  This method ensures the model can learn new skills (e.g., Bulgarian) while retaining old ones (e.g., English, mathematics, few-shot capabilities) 
-	  in the base model (e.g., Gemma-2 in this case, but can be other models).</p>
+	  <p lang="en">The key to the performance of the new line of BgGPT models is a novel branch and merge algorithm we presented at <a href="#ref-emnlp-19-nov">EMNLP’24 [1]</a>. 
+	  This method ensures the model can learn <b>new skills</b> (e.g., Bulgarian) while <b>retaining old ones</b> (e.g., English, mathematics, few-shot capabilities) 
+	  in the <b>base model</b> (e.g., Gemma-2 in this case).</p>
+	  <p lang="bg">Ключът към ефективността на новите модели BgGPT е алгоритъмът за разклоняване и сливане, който беше представен на <a href="#ref-emnlp-19-nov">EMNLP’24 [1]</a>. 
+	  Този метод позволява на модела да научава <b>нови умения</b> (например български език), като същевременно <b>запазва старите</b> (например английски език, математика или “few-shot” способности), 
+	  налични в <b>основния модел</b> (в случая Gemma-2).</p>
 
-	  <p>At a high level, the method works by splitting the continuous pre-training datasets into several splits (denoted with G in the figure above), 
+	  <p lang="en">At a high level, the method works by splitting the continuous pre-training datasets into several splits (denoted with G in the figure above), 
 	  training a model on each split, and then merging the resulting models, thus mitigating the forgetting associated with the different split models.
 	  Generally, the BgGPT models are developed as a series of model merges, as demonstrated in the figure above – here we show the continual pre-training
 	  stage of BgGPT, followed by an instruction fine-tuning stage. 
 	  We remark that our methodology is general and can be applied beyond Bulgarian and as shown in <a href="#ref-emnlp-19-nov">the paper [1]</a>.</p>
+	  <p lang="bg">В основни линии методът работи като разделя тренировъчните данни на няколко части (обозначени с G в горната фигура) и тренира отделни модели на всеки един от тях, които след това се сливат, за да се получи крайният модел. 
+	  С помощта на този метод, до голяма степен се избягва катастрофалното забравяне, което обикновено се случва при обучението на само един модел.</p>
+	  <p lang="bg">Процесът на разработка на моделите BgGPT се състои от поредица от сливания на модели, както е демонстрирано в горната фигура, където показваме първия етап на тренирането - непрекъснатото дообучение. 
+	  Следва етап на обучение върху български набор от данни с инструкции от чат приложението. Отбелязваме, че методологията ни е общоприложима и може да бъде използвана както за български, 
+	  така и за други езици, както и се описва в <a href="#ref-emnlp-19-nov">статията ни [1]</a>.</p>
 
-	  <h2>Benchmarks</h2>
+	  <h2 lang="en">Benchmarks</h2>
+	  <h2 lang="bg">Тестове на български и английски език</h2>
+	  
 
-      <p>We evaluate on a set of standard English benchmarks, a translated version of them in Bulgarian, as well as, Bulgarian specific benchmarks we collected:</p>
-
+      <p lang="en">We evaluate on a set of standard English benchmarks, a translated version of them in Bulgarian, as well as, Bulgarian specific benchmarks we collected:</p>
+	  <p lang="bg">Анализирахме способностите на моделите върху набор от стандартни тестове на английски, техни преводи на български, както и специфични тестове на български, които сме събрали:</p>
+	  
       <ul>
-        <li><b><a href="#ref-winograde-19-nov">Winogrande challenge [2]</a>:</b> testing world knowledge and understanding</li>
-        <li><b><a href="#ref-hellaswag-19-nov">Hellaswag [3]</a>:</b> testing sentence completion</li>
-        <li><b><a href="#ref-arc-challenge-19-nov">ARC Easy/Challenge [4]</a>:</b> testing logical reasoning</li>
-		<li><b><a href="#ref-triviaqa-19-nov">TriviaQA [5]</a>:</b> testing trivia knowledge</li>
-        <li><b><a href="#ref-gsm8k-19-nov">GSM-8K [6]</a>:</b> solving multiple-choice questions in high-school mathematics</li>
-		<li><b><a href="#ref-exams-19-nov">Exams [7]</a>:</b> solving high school problems from natural and social sciences</li>
-		<li><b>MON:</b> contains exams across various subjects for grades 4 to 12</li>
+        <li><b><a href="#ref-winograde-19-nov">Winogrande challenge [2]</a>:</b><div lang="en"> testing world knowledge and understanding</div><div lang="bg" > тества общи познания и разбиране</div></li>
+        <li><b><a href="#ref-hellaswag-19-nov">Hellaswag [3]</a>:</b><div lang="en"> testing sentence completion</div><div lang="bg" > тества способността за довършване на изречения</div></li>
+        <li><b><a href="#ref-arc-challenge-19-nov">ARC Easy/Challenge [4]</a>:</b><div lang="en" > testing logical reasoning</div><div lang="bg" > тества логически разсъждения</div></li>
+		<li><b><a href="#ref-triviaqa-19-nov">TriviaQA [5]</a>:</b><div lang="en" > testing trivia knowledge</div><div lang="bg" > тества фактологични знания</div></li>
+        <li><b><a href="#ref-gsm8k-19-nov">GSM-8K [6]</a>:</b><div lang="en" > solving multiple-choice questions in high-school mathematics</div><div lang="bg" > тества въпроси по математика на гимназиално ниво с множествен избор на отговора </div></li>
+		<li><b><a href="#ref-exams-19-nov">Exams [7]</a>:</b><div lang="en" > solving high school problems from natural and social sciences</div><div lang="bg" > тества решаване на задачи на гимназиално ниво за природни и социални науки</div></li>
+		<li><b>MON:</b><div lang="en" > contains exams across various subjects for grades 4 to 12</div>><div lang="bg" > включва изпити по предмети от 4 до 12 клас</div></li>
       </ul>
 
-      <p>These benchmarks test logical reasoning, mathematics, knowledge, language understanding and other skills of the models.</p>
+      <p lang="en">These benchmarks test logical reasoning, mathematics, knowledge, language understanding and other skills of the models.</p>
+	  <p lang="bg">Този набор от данни тества логическото разсъждаване, цялостните математически познания, езиковото разбиране и други умения на моделите.</p>
 	  
-	  <h2>Evaluation Results of 9B and 27B models on Benchmarks: Bulgarian and English</h2>
+	  <h2 lang="en">Evaluation Results of 9B and 27B models on Benchmarks: Bulgarian and English</h2>
+	  <h2 lang="bg">Резултати на BgGPT 9B и BgGPT 27B на български и английски език</h2>
+	   
 	  
-	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/bg_bench_en_nov19.svg"></object></div>
-	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;" data="/assets/img/en_bench_en_nov19.svg"></object></div>
+	  <div lang="en" style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/bg_bench_en_nov19.svg"></object></div>
+	  <div lang="en" style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;" data="/assets/img/en_bench_en_nov19.svg"></object></div>
       
-	  <p>The graphs above show the performance of BgGPT 9B and BgGPT 27B compared to other large open models. 
+	  <p lang="en">The graphs above show the performance of BgGPT 9B and BgGPT 27B compared to other large open models. 
 	  The results show the excellent abilities of both 9B and 27B models in Bulgarian, which allow them to <b>outperform much larger models</b>, 
 	  including Alibaba’s Qwen 2.5 72B and Meta’s Llama3.1 70B. Further, both BgGPT 9B and BgGPT 27B <b>significantly improve
-	  upon the previous version of BgGPT</b> based on Mistral-7B (BgGPT-7B-Instruct-v0.2, shown in grey in the figure).
+	  upon the previous version of BgGPT</b> based on Mistral-7B (<a href="https://huggingface.co/INSAIT-Institute/BgGPT-7B-Instruct-v0.2">BgGPT-7B-Instruct-v0.2</a>, shown in grey in the figure).
 	  Finally, our models retain the excellent English performance inherited from the original Google Gemma 2 models upon which they are based.</p>
+	  <p lang="bg">Графиките показват резултатите на BgGPT 9B и BgGPT 27B в сравнение с други големи отворени модели. 
+	  Резултатите на български сочат, че уменията и на двата модела <b>превъзхождат тези на много по-големи такива</b> като Qwen 2.5 72B на Alibaba и Llama3.1 70B на Meta. 
+	  Също така BgGPT 9B и 27B <b>значително надграждат над предишната версия на BgGPT</b> – <a href="https://huggingface.co/INSAIT-Institute/BgGPT-7B-Instruct-v0.2">BgGPT-7B-Instruct-v0.2</a>, базирана на Mistral-7B.</p>
       
-      <h2>Benchmark evaluation results for the BgGPT-2.6B model</h2>
+      <h2 lang="en">Benchmark evaluation results for the BgGPT-2.6B model</h2>
+	  <h2 lang="bg">Резултати на BgGPT 2.6B на български и английски език</h2>
 	  
-	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/bg_bench_2b_en_nov19.svg"></object></div>
-	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/en_bench_2b_en_nov19.svg"></object></div>
+	  <div lang="en" style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/bg_bench_2b_en_nov19.svg"></object></div>
+	  <div lang="en" style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/en_bench_2b_en_nov19.svg"></object></div>
 
-      <p>In addition to BgGPT 9B and BgGPT 27B, INSAIT is also releasing BgGPT 2.6B, which is a state-of-the-art small language model for Bulgarian based on the Gemma-2 2.6B model. 
+      <p lang="en">In addition to BgGPT 9B and BgGPT 27B, INSAIT is also releasing BgGPT 2.6B, which is a state-of-the-art small language model for Bulgarian based on the Gemma-2 2.6B model. 
 	  Above, we show that on Bulgarian benchmarks, BgGPT 2.6B <b>significantly improves</b> over existing small language models such as Microsoft’s Phi 3.5 and Alibaba’s Qwen 2.5 3B. 
 	  Again, as with the other BgGPT models, it retains the English capabilities of the underlying Gemma 2 2.6B model.</p>
+	  <p lang="en">Освен BgGPT 9B и BgGPT 27B, INSAIT пуска и BgGPT 2.6B, малък езиков модел на български, базиран на Gemma-2 2.6B. 
+	  На графиката показваме, че на нашия български набор от тестове, BgGPT 2.6B се справя <b>значително по-добре</b> от модели със същия размер като Phi 3.5 на Microsoft и Qwen 2.5 3B на Alibaba. 
+	  Отново, както и с другите BgGPT модели, BgGPT 2.6B запазва способностите на Gemma 2 2.6B на английски език.</p>
 
-      <h2>Chat Preference Evaluation of BgGPT 27B model vs. OpenAI and Anthropic models</h2>
+      <h2 lang="en">Chat Preference Evaluation of BgGPT 27B model vs. OpenAI and Anthropic models</h2>
+	  <h2 lang="bg">Чат предпочитания на български език спрямо комерсиалните модели на OpenAI и Anthropic</h2>
 	  
-	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;" data="/assets/img/chat_preference_media_en_white.svg"></object></div>
+	  <div lang="en" style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;" data="/assets/img/chat_preference_media_en_white.svg"></object></div>
 	  
-	  <p>In addition to benchmark evaluation, we evaluated the BgGPT 27B model in terms of chat performance on thousands of real-world questions from around 100 different topics.
+	  <p lang="en">In addition to benchmark evaluation, we evaluated the BgGPT 27B model in terms of chat performance on thousands of real-world questions from around 100 different topics.
 	  The results show that our model <b>significantly surpasses</b> the performance of the smaller variants of paid models, 
 	  such as Antropic’s Claude Haiku and OpenAI’s GPT-4o-mini in Bulgarian chat performance, and is <b>on par with the 
-	  best commercial models</b>, such as Antropic’s Claude Sonnet and OpenAI’s GPT-4o according to GPT-4o itself.</p>
+	  best commercial models</b>, such as Antropic’s Claude Sonnet and OpenAI’s GPT-4o <b>according to GPT-4o itself</b>.</p>
+	  <p lang="bg">Освен българските тестове, проверихме качеството на BgGPT 27B и по отношение на отговори на чат въпроси на около 100 различни теми. 
+	  Резултатите показват, че той <b>значително надминава</b> по-малките варианти на моделите на Anthropic (Claude Haiku) и OpenAI (GPT-4o-mini) при работа на български език, 
+	  и е <b>наравно с най-добрите комерсиални модели</b> като Claude Sonnet и GPT-4o <b>според самия GPT-4o</b>.</p>
       
-      <h2>References</h2>
+      <h2 lang="en">References</h2>
+	  <h2 lang="bg">Препратки</h2>
+	  
 
       <ol class="references">
 		<li><a name="ref-emnlp-19-nov"><b>Mitigating Catastrophic Forgetting in Language Transfer via Model Merging</b>, Anton Alexandrov, Veselin Raychev, Mark Niklas Mueller, Ce Zhang, Martin Vechev, Kristina Toutanova. In Findings of the Association for Computational Linguistics: EMNLP 2024, pages 17167–17186, Miami, Florida, USA. Association for Computational Linguistics. <a href="https://aclanthology.org/2024.findings-emnlp.1000">https://aclanthology.org/2024.findings-emnlp.1000</a></a></li>
