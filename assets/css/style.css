@@ -130,6 +130,10 @@ h1, h2, h3, h4, h5, p, li {
     color: var(--primary-text);
 }
 
+a {
+	scroll-margin-top: 80px;
+}
+
 .nav-bar-stipe {
     position: absolute !important; 
     height: 75pt; 
