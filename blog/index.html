@@ -182,7 +182,7 @@
 	  <p lang="bg">В основни линии методът работи като разделя тренировъчните данни на няколко части (обозначени с G в горната фигура) и тренира отделни модели на всеки един от тях, които след това се сливат, за да се получи крайният модел. 
 	  С помощта на този метод, до голяма степен се избягва катастрофалното забравяне, което обикновено се случва при обучението на само един модел.</p>
 	  <p lang="bg">Процесът на разработка на моделите BgGPT се състои от поредица от сливания на модели, както е демонстрирано в горната фигура, където показваме първия етап на тренирането - непрекъснатото дообучение. 
-	  Следва етап на обучение върху български набор от данни с инструкции от чат приложението. Отбелязваме, че методологията ни е общоприложима и може да бъде използвана както за български, 
+	  Следва етап на обучение върху български набор от данни с инструкции от 	чат приложението. Отбелязваме, че методологията ни е общоприложима и може да бъде използвана както за български, 
 	  така и за други езици, както и се описва в <a href="#ref-emnlp-19-nov">статията ни [1]</a>.</p>
 
 	  <h2 lang="en">Benchmarks</h2>
@@ -235,11 +235,15 @@
       <h2 lang="en">Benchmark evaluation results for the BgGPT-2.6B model</h2>
 	  <h2 lang="bg">Резултати на BgGPT 2.6B на български и английски език</h2>
 	  
-	  <div lang="en" style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:50pt; padding-bottom:15pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/bg_bench_2b_en_nov19.svg"></object></div>
-	  <div lang="en" style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:15pt; padding-bottom:50pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/en_bench_2b_en_nov19.svg"></object></div>
+	  <div lang="en">
+			<div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:50pt; padding-bottom:15pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/bg_bench_2b_en_nov19.svg"></object></div>
+			<div lang="en" style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:15pt; padding-bottom:50pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/en_bench_2b_en_nov19.svg"></object></div>
+	  </div>
 	  
-	  <div lang="bg" style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:50pt; padding-bottom:15pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/bg_bench_2b_bg_nov19.svg"></object></div>
-	  <div lang="bg" style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:15pt; padding-bottom:50pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/en_bench_2b_bg_nov19.svg"></object></div>
+	  <div lang="bg">
+			<div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:50pt; padding-bottom:15pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/bg_bench_2b_bg_nov19.svg"></object></div>
+			<div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:15pt; padding-bottom:50pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/en_bench_2b_bg_nov19.svg"></object></div>
+	  </div>
 
       <p lang="en">In addition to BgGPT 9B and BgGPT 27B, INSAIT is also releasing BgGPT 2.6B, which is a state-of-the-art small language model for Bulgarian based on the Gemma-2 2.6B model. 
 	  Above, we show that on Bulgarian benchmarks, BgGPT 2.6B <b>significantly improves</b> over existing small language models such as Microsoft’s Phi 3.5 and Alibaba’s Qwen 2.5 3B. 
