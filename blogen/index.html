@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>The model behind the BgGPT chat is now published</title>
-    <link rel="canonical" href="https://bggpt.ai/blog/" />
+    <title>State-of-the-art Bulgarian LLMs</title>
     <link rel="icon" type="image/png" href="/assets/img/icon.144.png">
-    <link rel="canonical" href="https://bggpt.ai/blog/2024-02-18-launching-the-first-free-and-open-bulgarian-llm/">
+    <link rel="canonical" href="https://models.bggpt.ai/blog/2024-02-18-launching-the-first-free-and-open-bulgarian-llm/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -16,6 +15,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <script>
+	  $(document).ready(function () {
+		if (history.scrollRestoration) {
+			history.scrollRestoration = 'manual';
+		}
+	  });
       function handleLanguageChange(cb) {
         if (cb.checked) {
           document.body.classList.remove('lang-bg');
@@ -56,20 +60,25 @@
           document.body.classList.remove('dark');
         }
       });
+	  $(document).ready(function () {
+		if (history.scrollRestoration) {
+			history.scrollRestoration = 'manual';
+		}
+	  });
     </script>
 
-    <meta name="description" content="The first generative state-of-the-art AI created for the Bulgarian government, users, public and private organizations." />
-    <meta name="keywords" content="Bulgaria, LLM, BGGPT, BgGPT, BgGPT-7B-Instruct-v0.1, AI, Chatbot, Open-source">
-    <meta property="og:title" content="Launching the first free and open Bulgarian LLM" />
-    <meta property="og:description" content="Тhe first generative state-of-the-art AI created for the Bulgarian government, users, public and private organizations." />
-    <meta property="og:image" content="https://bggpt.ai/assets/img/social_en.png" />
-    <meta property="og:url" content="https://bggpt.ai/blog/2024-02-18-launching-the-first-free-and-open-bulgarian-llm/"/>
+    <meta name="description" content="State-of-the-art generative AI created for the Bulgarian government, users, public and private organizations" />
+    <meta name="keywords" content="Bulgaria, LLM, BgGPT, BgGPT-Gemma-2-2.6B-IT-v1.0, BgGPT-Gemma-2-9B-IT-v1.0, BgGPT-Gemma-2-27B-IT-v1.0, BgGPT-Gemma-2, AI, Chatbot, Open-source, Open">
+    <meta property="og:title" content="State-of-the-art Bulgarian LLMs" />
+    <meta property="og:description" content="State-of-the-art generative AI created for the Bulgarian government, users, public and private organizations" />
+    <meta property="og:image" content="https://models.bggpt.ai/assets/img/social_en.png" />
+    <meta property="og:url" content="https://models.bggpt.ai/blog/"/>
     <meta property="og:type" content="website" />
-    <meta name="twitter:description" content="The first generative state-of-the-art AI created for the Bulgarian government, users, public and private organizations." />
-    <meta name="twitter:image" content="https://bggpt.ai/assets/img/social_en.png" />
-    <meta name="twitter:image:src" content="https://bggpt.ai/assets/img/social_en.png" />
+    <meta name="twitter:description" content="State-of-the-art generative AI created for the Bulgarian government, users, public and private organizations" />
+    <meta name="twitter:image" content="https://models.bggpt.ai/assets/img/social_en.png" />
+    <meta name="twitter:image:src" content="https://models.bggpt.ai/assets/img/social_en.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Launching the first free and open Bulgarian LLM" />
+    <meta name="twitter:title" content="State-of-the-art Bulgarian LLMs" />
   </head>
 
   <body>
@@ -125,15 +134,116 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <h1 style="margin-bottom:0;" id="blogen">The model behind the BgGPT chat is now published</h1>
-     
-      <p class="date" style="margin-bottom:2rem;fontr-size:110%;margin-left:5px;">March 3, 2024</p>
+	
+   <div class="container">
+      <h1 style="margin-bottom:0;"  id="blogen2">INSAIT releases state-of-the-art language models for Bulgarian setting a new standard for open national LLMs</h1>
+	  <p class="date" style="margin-top:1rem;font-size:155%;color:gray;"  >This is the first time open LLMs of practical size for a target language surpass in performance much 
+	  larger open models while being competitive for chatting with paid platforms such as OpenAI and Anthropic.</p>
+	  <p class="date" style="margin-bottom:2rem;font-size:110%;"  >November 19, 2024</p>
+  
 
-      <p>At INSAIT we are delighted to release BgGPT-7B-Instruct-v0.2, the model used behind the BgGPT chat app: <a href="https://chat.bggpt.ai/">https://chat.bggpt.ai</a>. This model, part of the BgGPT series of models, is an improved version of the one we released <a href="#blog-post-1">a couple of weeks ago</a>. BGGPT-7B-Instruct-v0.2 is still a 7B model, which is very fast for text generation and can run on most recent personal computers. It also comes with a permissive and commercial-friendly Apache 2.0 licence. The model is based on Mistral-7B, but was trained on significant amounts of data, and combined with other advances (to be published in research conferences), can outperform much larger models on Bulgarian tasks. The training costs of BGGPT-7B-Instruct-v0.2 come entirely from private funds and donations.  Please see <a href="#blog-post-1">the blog post</a> for BGGPT-7B-Instruct-v0.1 we released earlier.</p>
+      <p  >INSAIT is delighted to announce the release of three new state-of-the-art AI models, a 27 billion, a 9 billion, and a small 2.6 billion parameter models,
+	  targeting the Bulgarian language (called BgGPT). The 27B and 9B models demonstrate unprecedented performance in Bulgarian, outpacing much larger ones,
+	  while retaining English language capabilities. Beyond benchmarks, INSAIT’s 27B model significantly surpasses GPT-4o-mini and rivals GPT-4o in Bulgarian chat performance,
+	  according to GPT-4o itself used as a judge. We observe similar results with Anthropic’s Claude Haiku and Sonnet paid models.</p>
+      
+	  <p >INSAIT’s three new models are built on top of Google’s Gemma 2 family of open models and were pre-trained on around 100 billion tokens (85 billion in Bulgarian) 
+	  using the Branch-and-Merge continual pre-training strategy that INSAIT invented and presented at <a href="#ref-emnlp-19-nov">EMNLP’24 [1]</a>. 
+	  Further, the models were instruction-fine-tuned on a novel Bulgarian instruction dataset created using real-world conversations collected from <a href="https://chat.bggpt.ai/">https://chat.bggpt.ai/</a>.</p>
+	  
+	  <br><br>
+      <h2  >New Research: Avoiding Catastrophic forgetting via Branch-and-Merge</h2>
+	 
+	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%"><object type="image/svg+xml" style="max-width:100%;padding-top:50pt; padding-bottom:50pt;" data="/assets/img/bggpt_merge_nov19.svg"></object></div>
+	  
+	  <p >The key to the performance of the new line of BgGPT models is a novel branch and merge algorithm we presented at <a href="#ref-emnlp-19-nov">EMNLP’24 [1]</a>. 
+	  This method ensures the model can learn <b>new skills</b> (e.g., Bulgarian) while <b>retaining old ones</b> (e.g., English, mathematics, few-shot capabilities) 
+	  in the <b>base model</b> (e.g., Gemma-2 in this case).</p>
+	 
+	  <p >At a high level, the method works by splitting the continuous pre-training datasets into several splits (denoted with G in the figure above), 
+	  training a model on each split, and then merging the resulting models, thus mitigating the forgetting associated with the different split models.
+	  Generally, the BgGPT models are developed as a series of model merges, as demonstrated in the figure above – here we show the continual pre-training
+	  stage of BgGPT, followed by an instruction fine-tuning stage. 
+	  We remark that our methodology is general and can be applied beyond Bulgarian and as shown in <a href="#ref-emnlp-19-nov">the paper [1]</a>.</p>
+	 
+	  <br><br>
+	  <h2 >Benchmarks</h2>
+
+      <p >We evaluate on a set of standard English benchmarks, a translated version of them in Bulgarian, as well as, Bulgarian specific benchmarks we collected:</p>
+  
+      <ul>	
+		<li ><b><a href="#ref-winograde-19-nov">Winogrande challenge [2]</a>:</b> testing world knowledge and understanding</li>
+        <li ><b><a href="#ref-hellaswag-19-nov">Hellaswag [3]</a>:</b> testing sentence completion</li>
+        <li ><b><a href="#ref-arc-challenge-19-nov">ARC Easy/Challenge [4]</a>:</b> testing logical reasoning</li>
+		<li ><b><a href="#ref-triviaqa-19-nov">TriviaQA [5]</a>:</b> testing trivia knowledge</li>
+        <li ><b><a href="#ref-gsm8k-19-nov">GSM-8K [6]</a>:</b> solving multiple-choice questions in high-school mathematics</li>
+		<li ><b><a href="#ref-exams-19-nov">Exams [7]</a>:</b> solving high school problems from natural and social sciences</li>
+		<li ><b>MON:</b> contains exams across various subjects for grades 4 to 12</li>
+      </ul>
+
+      <p >These benchmarks test logical reasoning, mathematics, knowledge, language understanding and other skills of the models.</p>
+	  
+	  <br><br>
+	  <h2 >Evaluation Results of 9B and 27B models on Benchmarks: Bulgarian and English</h2>
+	   
+	  <div >
+			<div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:50pt; padding-bottom:15pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/bg_bench_en_nov19.svg"></object></div>
+			<div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:15pt; padding-bottom:50pt;"><object type="image/svg+xml" style="max-width:100%;" data="/assets/img/en_bench_en_nov19.svg"></object></div>
+	  </div>
+	  	  
+	  <p >The graphs above show the performance of BgGPT 9B and BgGPT 27B compared to other large open models. 
+	  The results show the excellent abilities of both 9B and 27B models in Bulgarian, which allow them to <b>outperform much larger models</b>, 
+	  including Alibaba’s Qwen 2.5 72B and Meta’s Llama3.1 70B. Further, both BgGPT 9B and BgGPT 27B <b>significantly improve
+	  upon the previous version of BgGPT</b> based on Mistral-7B (<a href="https://huggingface.co/INSAIT-Institute/BgGPT-7B-Instruct-v0.2">BgGPT-7B-Instruct-v0.2</a>, shown in grey in the figure).
+	  Finally, our models retain the excellent English performance inherited from the original Google Gemma 2 models upon which they are based.</p>
+      
+	  <br><br>
+      <h2 >Benchmark evaluation results for the BgGPT-2.6B model</h2>
+
+	  <div >
+			<div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:50pt; padding-bottom:15pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/bg_bench_2b_en_nov19.svg"></object></div>
+			<div  style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:15pt; padding-bottom:50pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/en_bench_2b_en_nov19.svg"></object></div>
+	  </div>
+	  
+      <p >In addition to BgGPT 9B and BgGPT 27B, INSAIT is also releasing BgGPT 2.6B, which is a state-of-the-art small language model for Bulgarian based on the Gemma-2 2.6B model. 
+	  Above, we show that on Bulgarian benchmarks, BgGPT 2.6B <b>significantly improves</b> over existing small language models such as Microsoft’s Phi 3.5 and Alibaba’s Qwen 2.5 3B. 
+	  Again, as with the other BgGPT models, it retains the English capabilities of the underlying Gemma 2 2.6B model.</p>
+
+	  <br><br>
+      <h2 >Chat Preference Evaluation of BgGPT 27B model vs. OpenAI and Anthropic models</h2>
+	  
+	  <div >
+			<div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:50pt; padding-bottom:50pt;"><object type="image/svg+xml" style="max-width:100%;" data="/assets/img/chat_preference_media_en_white.svg"></object></div>
+	  </div>
+  
+	  <p >In addition to benchmark evaluation, we evaluated the BgGPT 27B model in terms of chat performance on thousands of real-world questions from around 100 different topics.
+	  The results show that our model <b>significantly surpasses</b> the performance of the smaller variants of paid models, 
+	  such as Antropic’s Claude Haiku and OpenAI’s GPT-4o-mini in Bulgarian chat performance, and is <b>on par with the 
+	  best commercial models</b>, such as Antropic’s Claude Sonnet and OpenAI’s GPT-4o <b>according to GPT-4o itself</b>.</p>
+	  
+	  <br>
+      <h2 >References</h2>
+	  <br><br>
+      <ol class="references">
+		<li><a name="ref-emnlp-19-nov"><b>Mitigating Catastrophic Forgetting in Language Transfer via Model Merging</b>, Anton Alexandrov, Veselin Raychev, Mark Niklas Mueller, Ce Zhang, Martin Vechev, Kristina Toutanova. In Findings of the Association for Computational Linguistics: EMNLP 2024, pages 17167–17186, Miami, Florida, USA. Association for Computational Linguistics. <a href="https://aclanthology.org/2024.findings-emnlp.1000">https://aclanthology.org/2024.findings-emnlp.1000</a></a></li>
+		<li><a name="ref-winograde-19-nov"><b>Winogrande: An adversarial winograd schema challenge at scale</b>, Keisuke Sakaguchi, Ronan Le Bras, Chandra Bhagavatula, and Yejin Choi. Communications of the ACM, 64(9):99–106, 2021.</a></li>
+        <li><a name="ref-hellaswag-19-nov"><b>Hellaswag: Can a machine really finish your sentence?</b>, Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi. <a href="https://arxiv.org/abs/1905.07830">https://arxiv.org/abs/1905.07830</a></a></li>
+        <li><a name="ref-arc-challenge-19-nov"><b>Think you have solved question answering? try arc, the ai2 reasoning challenge</b>, Peter Clark, Isaac Cowhey, Oren Etzioni, Tushar Khot, Ashish Sabharwal, Carissa Schoenick, and Oyvind Tafjord. <a href="https://arxiv.org/abs/1803.05457">https://arxiv.org/abs/1803.05457</a></a></li>
+        <li><a name="ref-triviaqa-19-nov"><b>Triviaqa: A large scale distantly supervised challenge dataset for reading comprehension</b>, Mandar Joshi, Eunsol Choi, Daniel S Weld, and Luke Zettlemoyer. <a href="https://arxiv.org/abs/1705.03551">https://arxiv.org/abs/1705.03551</a></a></li>
+		<li><a name="ref-gsm8k-19-nov"><b>Training verifiers to solve math word problems</b>, Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz Kaiser, Matthias Plappert, Jerry Tworek, Jacob Hilton, Reiichiro Nakano, et al. <a href="https://arxiv.org/abs/2110.14168">https://arxiv.org/abs/2110.14168</a></a></li>
+        <li><a name="ref-exams-19-nov"><b>EXAMS: A multi-subject high school examinations dataset for cross-lingual and multilingual question answering</b>, Momchil Hardalov, Todor Mihaylov, Dimitrina Zlatkova, Yoan Dinkov, Ivan Koychev, and Preslav Nakov. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 5427–5444, Online. Association for Computational Linguistics. <a href="https://aclanthology.org/2020.emnlp-main.438/">https://aclanthology.org/2020.emnlp-main.438/</a></a></li>
+      </ol>
+    </div>
+	
+    <div  class="container">
+      <h1 style="margin-bottom:0; margin-top:4rem;" id="blogen">The model behind the BgGPT chat is now published</h1>
+     
+      <p class="date" style="margin-bottom:2rem;font-size:110%;">March 3, 2024</p>
+
+      <p>At INSAIT we are delighted to release BgGPT-7B-Instruct-v0.2, the model used behind the BgGPT chat app: <a href="https://chat.bggpt.ai/">https://chat.bggpt.ai</a>. This model, part of the BgGPT series of models, is an improved version of the one we released <a href="#blog-post-1">a couple of weeks ago</a>. BgGPT-7B-Instruct-v0.2 is still a 7B model, which is very fast for text generation and can run on most recent personal computers. It also comes with a permissive and commercial-friendly Apache 2.0 licence. The model is based on Mistral-7B, but was trained on significant amounts of data, and combined with other advances (to be published in research conferences), can outperform much larger models on Bulgarian tasks. The training costs of BgGPT-7B-Instruct-v0.2 come entirely from private funds and donations.  Please see <a href="#blog-post-1">the blog post</a> for BgGPT-7B-Instruct-v0.1 we released earlier.</p>
       <h2>BgGPT Success Story</h2>
 
-      <p>In only 2 weeks, BGGPT-7B-Instruct-v0.1 has already been adopted by various companies who remarked that with only few hours of work and low computation and financial resources for fine-tuning, it can reach the performance of GPT-4 on a particular task in Bulgarian.</p>
+      <p>In only 2 weeks, BgGPT-7B-Instruct-v0.1 has already been adopted by various companies who remarked that with only few hours of work and low computation and financial resources for fine-tuning, it can reach the performance of GPT-4 on a particular task in Bulgarian.</p>
       
       <h2>Evaluation & Benchmarks</h2>
 
@@ -153,13 +263,11 @@
       
       <h2>Evaluation Results</h2>
 
-      <p>The following graphs show the performance of BgGPT-7B-Instruct-v0.2. It outperforms same-sized models on Bulgarian benchmarks, including improving upon the previous version of BgGPT-7B (BGGPT-7B-Instruct-v0.1). It also outperformed the much larger Mixtral-8x7B-Instruct-v0.1 on Bulgarian benchmarks. It also did not lose English skills and on some is comparable or better than the models of Google’s Gemma-7B, Mistral-7B, Llama-7B and others.</p>
+      <p>The following graphs show the performance of BgGPT-7B-Instruct-v0.2. It outperforms same-sized models on Bulgarian benchmarks, including improving upon the previous version of BgGPT-7B (BgGPT-7B-Instruct-v0.1). It also outperformed the much larger Mixtral-8x7B-Instruct-v0.1 on Bulgarian benchmarks. It also did not lose English skills and on some is comparable or better than the models of Google’s Gemma-7B, Mistral-7B, Llama-7B and others.</p>
       
-			<object type="image/svg+xml" data="/assets/img/Bulgarian%20language%20skills%20on%20a%20set%20of%20LLM benchmarks v2.svg"></object>
-
-			<object type="image/svg+xml" data="/assets/img/Other%20benchmarks v2.svg"></object>
-
-			<object type="image/svg+xml" data="/assets/img/English%20language%20skills%20on%20a%20set%20of%20LLM benchmarks v2.svg"></object>
+	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:50pt; padding-bottom:15pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/Bulgarian%20language%20skills%20on%20a%20set%20of%20LLM benchmarks v2.svg"></object></div>
+	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:15pt; padding-bottom:15pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/Other%20benchmarks v2.svg"></object></div>
+	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:15pt; padding-bottom:50pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/English%20language%20skills%20on%20a%20set%20of%20LLM benchmarks v2.svg"></object></div>
       
       <h2>Outlook</h2>
 
@@ -178,5 +286,62 @@
         <li><a name="ref-bgglue-new">Momchil Hardalov, Pepa Atanasova, Todor Mihaylov, Galia Angelova, Kiril Simov, Petya Osenova, Veselin Stoyanov, Ivan Koychev, Preslav Nakov, and Dragomir Radev. bgGLUE: A Bulgarian general language understanding evaluation benchmark. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 8733–8759 <a href="https://bgglue.github.io/">https://bgglue.github.io/</a></li>
       </ol>
     </div>
+    <div  class="container">
+      <h1 style="margin-bottom:0; margin-top:4rem;" id="blog-post-1">Launching the first free and open Bulgarian LLM</h1>
+      <p class="date" style="margin-bottom:2rem;font-size:110%;">February 18, 2024</p>
+
+      <p>At INSAIT we are thrilled to launch <a href="https://huggingface.co/INSAIT-Institute/BgGPT-7B-Instruct-v0.1">BgGPT-7B-Instruct-v0.1</a>, the first free and open Bulgarian Large Language Model in the BgGPT series (more models coming soon). BgGPT-7B-Instruct-v0.1 is now available for download at HuggingFace with the permissive and commercial-friendly Apache 2.0 licence. The model, which builds on Mistral-7B, already outperforms similarly sized models such as LLaMA2-7b and Mistral-7B on all Bulgarian language tasks. On many of these tasks, It also outperforms much larger models such as Mixtral-8x7B-Instruct-v0.1 (about 6.5 times larger), which has been shown to have similar capabilities as GPT-3.5.</p>
+      <h2>Evaluation & Benchmarks</h2>
+
+      <p>To systematically evaluate the Bulgarian performance of LLMs, including our model and any existing or future models, we translated a set of benchmarks to Bulgarian, including:</p>
+
+      <ul>
+        <li><a href="#ref-winograde">Winogrande challenge [1]</a>: testing world understanding</li>
+        <li><a href="#ref-hellaswag">Hellaswag [2]</a>: testing sentence completion</li>
+        <li><a href="#ref-arc-challenge">ARC Challenge [3]</a>: testing logical reasoning</li>
+        <li><a href="#ref-mmlu">MMLU [4]</a>: including multiple choice questions from many disciplines</li>
+        <li><a href="#ref-mathqa">MathQA [5]</a>: testing math reasoning</li>
+        <li><a href="#ref-gsm8k">GSM8K [6]</a>: solving multiple-choice questions in high-school mathematics</li>
+        <li><a href="#ref-triviaqa">TriviaQA [7]</a>: testing trivia knowledge</li>
+        <li><a href="#ref-bgglue">bgGLUE [8]</a>: includes several Bulgarian language tasks</li>
+      </ul>
+
+      <p>These benchmarks (except the last one which already exists) were built via both machine translation as well as our amazing team of translators. For evaluation, we <a href="https://github.com/insait-institute/lm-evaluation-harness-bg">forked</a> a version of the EuletherAI's evaluation harness. All benchmark data is made publicly available in our <a href="https://huggingface.co/INSAIT-Institute" >HF repository</a> to help others evaluate their own models.</p>
+
+      <p><strong>Note on evaluation:</strong> great care should be taken to not contaminate training or fine-tuning datasets by including the above benchmarks (generally known as overfitting, but a threat recently explored in detail here <a href="#ref-evading">[9]</a>), which can lead to misreported results.</p>
+
+      <h2>Evaluation Results</h2>
+
+      <p>The following graphs show the performance of BgGPT-7B-Instruct-v0.1. It clearly outperforms same-sized models on Bulgarian benchmarks as well as on most other benchmarks. It also outperformed the much larger Mixtral-8x7B-Instruct-v0.1 on Bulgarian benchmarks. That said, the model does not excel at deep reasoning and knowledge skills, though this is somewhat expected as smaller models can learn less which is reflected in the knowledge-testing benchmarks. We expect this to improve in the BgGPT that will follow. Interestingly, even though the model is biased to Bulgarian, it does retain some English skills, making it a versatile tool for cross-lingual tasks including translation from English to Bulgarian. Here we include a gist of the benchmark results.</p>
+	  
+	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:50pt; padding-bottom:15pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/Bulgarian%20language%20skills%20on%20a%20set%20of%20LLM benchmarks.svg"></object></div>
+	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:15pt; padding-bottom:15pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/Other%20benchmarks.svg"></object></div>
+	  <div style="display: flex; justify-content: center;align-items: center;max-width:100%;padding-top:15pt; padding-bottom:50pt;"><object type="image/svg+xml" style="max-width:100%;"data="/assets/img/English%20language%20skills%20on%20a%20set%20of%20LLM benchmarks.svg"></object></div>
+
+      <h2>Outlook</h2>
+
+      <p>While larger models will in general offer superior performance, we see that specialised, smaller 7B models can actually produce similar results to non-specialized much larger models, while enjoying much cheaper inference costs. Further, for many business applications, smaller models may suffice. Over the next weeks, we will release improved models, so stay tuned!</p>
+
+      <h2>Institutional use of BgGPT</h2>
+
+      <p>If you are an institution or a business organisation interested in using BgGPT internally and have questions on how to do so, please contact us at: <a href="mailto:bggpt@insait.ai">bggpt@insait.ai</a></p>
+
+      <h2>References</h2>
+
+      <ol class="references">
+        <li><a name="ref-winograde">Keisuke Sakaguchi, Ronan Le Bras, Chandra Bhagavatula, and Yejin Choi. Winogrande: An adversarial winograd schema challenge at scale. Communications of the ACM, 64(9):99–106, 2021.</li>
+        <li><a name="ref-hellaswag">Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi. Hellaswag: Can a machine really finish your sentence? <a href="https://arxiv.org/abs/1905.07830">https://arxiv.org/abs/1905.07830</a></li>
+        <li><a name="ref-arc-challenge">Peter Clark, Isaac Cowhey, Oren Etzioni, Tushar Khot, Ashish Sabharwal, Carissa Schoenick, and Oyvind Tafjord. Think you have solved question answering? try arc, the ai2 reasoning challenge. <a href="https://arxiv.org/abs/1803.05457">https://arxiv.org/abs/1803.05457</a></li>
+        <li><a name="ref-mmlu">Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, and Jacob Steinhardt. Measuring massive multitask language understanding. <a href="https://arxiv.org/abs/2009.03300">https://arxiv.org/abs/2009.03300</a></li>
+        <li><a name="ref-mathqa">Aida Amini, Saadia Gabriel, Shanchuan Lin, Rik Koncel-Kedziorski, Yejin Choi, and Hannaneh Hajishirzi. MathQA: Towards interpretable math word problem solving with operation-based formalisms <a href="https://arxiv.org/abs/1905.13319">https://arxiv.org/abs/1905.13319</a></li>
+        <li><a name="ref-gsm8k">Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz Kaiser, Matthias Plappert, Jerry Tworek, Jacob Hilton, Reiichiro Nakano, et al. Training verifiers to solve math word problems. <a href="https://arxiv.org/abs/2110.14168">https://arxiv.org/abs/2110.14168</a></li>
+        <li><a name="ref-triviaqa">Mandar Joshi, Eunsol Choi, Daniel S Weld, and Luke Zettlemoyer. Triviaqa: A large scale distantly supervised challenge dataset for reading comprehension. <a href="https://arxiv.org/abs/1705.03551">https://arxiv.org/abs/1705.03551</a></li>
+        <li><a name="ref-bgglue">Momchil Hardalov, Pepa Atanasova, Todor Mihaylov, Galia Angelova, Kiril Simov, Petya Osenova, Veselin Stoyanov, Ivan Koychev, Preslav Nakov, and Dragomir Radev. bgGLUE: A Bulgarian general language understanding evaluation benchmark. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 8733–8759 <a href="https://bgglue.github.io/">https://bgglue.github.io/</a></li>
+        <li><a name="ref-evading">Evading Data Contamination Detection for Language Models is (too) Easy, Dekonick et. al. <a href="https://arxiv.org/abs/2402.02823">https://arxiv.org/abs/2402.02823</a></li>
+      </ol>
+    </div>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7392b251f9b044028a8606279c384767"}'></script>
+    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>

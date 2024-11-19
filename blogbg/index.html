@@ -96,24 +96,24 @@
         <div class="collapse navbar-collapse offset-sm-6 offset-lg-0" id="navbarNav">
           <ul class="navbar-nav bg-custom ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="https://insait.ai/" >За INSAIT</a>
+              <a class="nav-link" href="https://insait.ai/" lang="bg">За INSAIT</a>
               <a class="nav-link" href="https://insait.ai/" lang="en">About INSAIT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://chat.bggpt.ai/" >BgGPT чат</a>
+              <a class="nav-link" href="https://chat.bggpt.ai/" lang="bg">BgGPT чат</a>
               <a class="nav-link" href="https://chat.bggpt.ai/" lang="en">BgGPT chat</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/blog/" lang="en">Blog</a>
-              <a class="nav-link" href="/blog/" >Блог</a>
+              <a class="nav-link" href="/blog/" lang="bg">Блог</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://huggingface.co/INSAIT-Institute" lang="en">INSAIT models</a>
-              <a class="nav-link" href="https://huggingface.co/INSAIT-Institute" >Модели на INSAIT</a>
+              <a class="nav-link" href="https://huggingface.co/INSAIT-Institute" lang="bg">Модели на INSAIT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="mailto:bggpt@insait.ai" lang="en">Contact us</a>
-              <a class="nav-link" href="mailto:bggpt@insait.ai" >Свържи се с нас</a>
+              <a class="nav-link" href="mailto:bggpt@insait.ai" lang="bg">Свържи се с нас</a>
             </li>
             <li class="nav-item toggle">
               <button class="light-switch" onclick="handleThemeChange();">
@@ -140,11 +140,6 @@
 	  <p class="date" style="margin-top:1rem;font-size:155%;color:gray;" >За пръв път отворени езикови модели с практичен размер за конкретен език надминават по ефективност много по-големи отворени модели, като същевременно са конкурентоспособни за чат с платени платформи като OpenAI и Anthropic.</p>
 	  <p class="date" style="margin-bottom:2rem;font-size:110%;"  >19 ноември 2024 г</p>
 	  
-
-      <p lang="en" >INSAIT is delighted to announce the release of three new state-of-the-art AI models, a 27 billion, a 9 billion, and a small 2.6 billion parameter models,
-	  targeting the Bulgarian language (called BgGPT). The 27B and 9B models demonstrate unprecedented performance in Bulgarian, outpacing much larger ones,
-	  while retaining English language capabilities. Beyond benchmarks, INSAIT’s 27B model significantly surpasses GPT-4o-mini and rivals GPT-4o in Bulgarian chat performance,
-	  according to GPT-4o itself used as a judge. We observe similar results with Anthropic’s Claude Haiku and Sonnet paid models.</p>
       <p >INSAIT обявява пускането на три нови AI модела на световно ниво -  27 милиарден (BgGPT 27B), 9 милиарден (BgGPT 9B) и малък модел с 2.6 милиарда параметъра (BgGPT 2.6B), специално за български език. 
 	  Моделите BgGPT 27B и 9B демонстрират безпрецедентни резултати върху български тестове, надминавайки много по-големи модели, като същевременно запазват способностите си на английски език. 
 	  Отвъд резултатите на тестовете за  български, допълнително тествахме и способностите на моделите за чат. 
@@ -222,9 +217,9 @@
 	  Резултатите показват, че той <b>значително надминава</b> по-малките варианти на моделите на Anthropic (Claude Haiku) и OpenAI (GPT-4o-mini) при работа на български език, 
 	  и е <b>наравно с най-добрите комерсиални модели</b> като Claude Sonnet и GPT-4o <b>според самия GPT-4o</b>.</p>
       
+	  <br>
+	  <h2>Препратки</h2>
 	  <br><br>
-	  <h2 >Препратки</h2>
-	  
       <ol class="references">
 		<li><a name="ref-emnlp-19-nov"><b>Mitigating Catastrophic Forgetting in Language Transfer via Model Merging</b>, Anton Alexandrov, Veselin Raychev, Mark Niklas Mueller, Ce Zhang, Martin Vechev, Kristina Toutanova. In Findings of the Association for Computational Linguistics: EMNLP 2024, pages 17167–17186, Miami, Florida, USA. Association for Computational Linguistics. <a href="https://aclanthology.org/2024.findings-emnlp.1000">https://aclanthology.org/2024.findings-emnlp.1000</a></a></li>
 		<li><a name="ref-winograde-19-nov"><b>Winogrande: An adversarial winograd schema challenge at scale</b>, Keisuke Sakaguchi, Ronan Le Bras, Chandra Bhagavatula, and Yejin Choi. Communications of the ACM, 64(9):99–106, 2021.</a></li>
@@ -266,7 +261,7 @@
       <p>Въпреки че моделът е доста конкурентен на безплатните отворени модели и особено като се има предвид неговият размер, той все още не е на нивото на комерсиалните платени предложения. Въпреки това, дори на сегашното си ниво, той може да бъде полезен за много приложения.</p>
       <p id="ref-trans">[*] Преводът е извършен в 2 стъпки. Първо попитахме: “Преведи на български език следния текст:” и поставяме английската версия на текста без заглавието. След това в същия чат попитахме “Направи го да звучи по-точно”.</p>
       <h2>Препратки</h2>
-      
+
       <ol class="references">
         <li><a name="ref-winograde-new">Keisuke Sakaguchi, Ronan Le Bras, Chandra Bhagavatula, and Yejin Choi. Winogrande: An adversarial winograd schema challenge at scale. Communications of the ACM, 64(9):99–106, 2021.</li>
         <li><a name="ref-hellaswag-new">Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi. Hellaswag: Can a machine really finish your sentence? <a href="https://arxiv.org/abs/1905.07830">https://arxiv.org/abs/1905.07830</a></li>
