@@ -96,39 +96,6 @@
         }
       });
 
-      // adding countdown timer
-      function updateCountdown() {
-        const targetDate = 1732435500000;
-
-        function update() {
-          const now = new Date().getTime();
-          const distance = targetDate - now;
-
-          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          document.getElementById('days').textContent = days.toString().padStart(2, '0');
-          document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-          document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-          document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-
-          if (distance < 0) {
-            clearInterval(interval);
-            document.getElementById('countdown').innerHTML = '<p lang="en">BgGPT is now available!</p><p lang="bg">BgGPT вече е достъпен!</p>';
-          }
-        }
-
-        update();
-        const interval = setInterval(update, 1000);
-      }
-
-      // Add this to your document.ready function
-      $(document).ready(function() {
-        // ... your existing ready code ...
-        updateCountdown();
-      });
     </script>
 
     <meta name="description" content="State-of-the-art generative AI created for the Bulgarian government, users, public and private organizations" />
@@ -201,42 +168,16 @@
     <div class="container" id="signup">
       <div class="row text-center">
         <div class="side-by-side">
-          <div class="container demo">
+	  <div class="container demo">
             <div class="row">
               <p lang="en" class="announcement">
-                <!-- <strong>BgGPT chat is now available free of charge at:</strong> -->
-                <strong>The new BgGPT chat application will be available in</strong>
+                <strong>BgGPT chat is now available free of charge at:</strong>
               </p>
               <p lang="bg" class="announcement">
-                <!-- <strong>BgGPT чат е свободно достъпен на:</strong> -->
-                <strong>Новият чат с BgGPT ще бъде достъпен след</strong>
+                <strong>BgGPT чат е свободно достъпен на:</strong>
               </p>
               <div class="offset-sm-1 col-sm-10 offset-lg-0 col-lg-12 mt-3 mb-5">
-                <!-- <a href="https://chat.bggpt.ai/"><img src="/assets/img/chat_available.png" alt="Announcement of chat application" style="max-width: 100%; max-height: 300px; width: auto; height: auto; display:block"></a> -->
-                <div class="offset-sm-1 col-sm-10 offset-lg-0 col-lg-12 mt-3 mb-5">
-                  <div id="countdown" class="countdown-container">
-                    <div class="countdown-box">
-                      <span id="days">00</span>
-                      <span class="label" lang="en">Days</span>
-                      <span class="label" lang="bg">Дни</span>
-                    </div>
-                    <div class="countdown-box">
-                      <span id="hours">00</span>
-                      <span class="label" lang="en">Hours</span>
-                      <span class="label" lang="bg">Часа</span>
-                    </div>
-                    <div class="countdown-box">
-                      <span id="minutes">00</span>
-                      <span class="label" lang="en">Minutes</span>
-                      <span class="label" lang="bg">Минути</span>
-                    </div>
-                    <div class="countdown-box">
-                      <span id="seconds">00</span>
-                      <span class="label" lang="en">Seconds</span>
-                      <span class="label" lang="bg">Секунди</span>
-                    </div>
-                  </div>
-                </div>
+                <a href="https://bggpt.ai/"><img src="assets/img/chat_available.png" alt="Announcement of chat application" style="max-width: 100%; max-height: 300px; width: auto; height: auto; display:block"></a>
               </div>
             </div>
           </div>
