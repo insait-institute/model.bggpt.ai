@@ -1,8 +1,9 @@
+import { getPermalink } from './utils/permalinks';
 import { nav, footer } from './i18n/translations';
 
 const hrefs = [
-  '/blog',
-  '/research',
+  getPermalink('/blog'),
+  getPermalink('/research'),
   'https://huggingface.co/collections/INSAIT-Institute/bggpt-gemma-3-685a5c099b4f0c4977f46488',
 ];
 
@@ -23,8 +24,8 @@ export const footerDataEn = {
     {
       title: footer.en.resources,
       links: [
-        { text: footer.en.research, href: '/research' },
-        { text: footer.en.blog, href: '/blog' },
+        { text: footer.en.research, href: getPermalink('/research') },
+        { text: footer.en.blog, href: getPermalink('/blog') },
         { text: footer.en.huggingFaceModels, href: huggingFaceHref },
       ],
     },
@@ -51,8 +52,8 @@ export const footerDataBg = {
     {
       title: footer.bg.resources,
       links: [
-        { text: footer.bg.research, href: '/research' },
-        { text: footer.bg.blog, href: '/blog' },
+        { text: footer.bg.research, href: getPermalink('/research') },
+        { text: footer.bg.blog, href: getPermalink('/blog') },
         { text: footer.bg.huggingFaceModels, href: huggingFaceHref },
       ],
     },

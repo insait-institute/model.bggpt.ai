@@ -11,7 +11,7 @@ const translationsJson = JSON.stringify(clientTranslations);
 ---
 
 <button type="button" class={className} aria-label="Toggle language" data-aw-toggle-language>
-  <span class="font-semibold text-xs uppercase tracking-wide" data-lang-label>BG</span>
+  <span class="font-semibold text-xs uppercase tracking-wide" data-lang-label>EN</span>
 </button>
 
 <script is:inline define:vars={{ translationsJson }}>
@@ -45,7 +45,7 @@ const translationsJson = JSON.stringify(clientTranslations);
 
       // Update toggle button labels
       document.querySelectorAll('[data-lang-label]').forEach(function(el) {
-        el.textContent = lang.toUpperCase();
+        el.textContent = (lang === 'bg' ? 'en' : 'bg').toUpperCase();
       });
 
       // Show/hide language blocks
