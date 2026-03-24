@@ -17,9 +17,11 @@ metadata:
     site_name: BgGPT
     images:
       - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
+        width: 1920
+        height: 1080
     type: website
+  twitter:
+    cardType: summary_large_image
 
 i18n:
   language: en
