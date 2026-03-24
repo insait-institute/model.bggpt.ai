@@ -3,6 +3,9 @@ import Layout from '~/layouts/PageLayout.astro';
 import Button from '~/components/ui/Button.astro';
 import { hero } from '~/i18n/translations';
 
+const huggingFaceHref =
+  'https://huggingface.co/collections/INSAIT-Institute/bggpt-gemma-3';
+
 const metadata = {
   title: 'BgGPT',
   ignoreTitleTemplate: true,
@@ -10,22 +13,32 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <!-- Hero -->
   <section class="relative not-prose">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
       <div class="py-12 md:py-20">
         <div class="text-center max-w-5xl mx-auto">
-          <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tighter mb-8 font-heading dark:text-gray-200">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tighter mb-4 font-heading dark:text-gray-200">
             <span data-lang-en style="display:none" set:html={hero.en.title} />
             <span data-lang-bg set:html={hero.bg.title} />
           </h1>
-          <div class="m-auto flex justify-center" data-lang-en style="display:none">
-            <Button variant="primary" text={hero.en.cta} href="mailto:bggpt@insait.ai" icon="tabler:mail" />
+          <p class="text-xl text-muted mb-8 max-w-3xl mx-auto">
+            <span data-lang-en style="display:none" set:html={hero.en.subtitle} />
+            <span data-lang-bg set:html={hero.bg.subtitle} />
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4" data-lang-en style="display:none">
+            <Button variant="primary" text="Try BgGPT Chat" href="https://bggpt.ai" icon="tabler:message-chatbot" target="_blank" />
+            <Button variant="secondary" text={hero.en.cta} href="mailto:bggpt@insait.ai" icon="tabler:api" />
+            <Button variant="secondary" text={hero.en.ctaSecondary} href={huggingFaceHref} icon="tabler:download" target="_blank" />
           </div>
-          <div class="m-auto flex justify-center" data-lang-bg>
-            <Button variant="primary" text={hero.bg.cta} href="mailto:bggpt@insait.ai" icon="tabler:mail" />
+          <div class="flex flex-col sm:flex-row justify-center gap-4" data-lang-bg>
+            <Button variant="primary" text="Чат с BgGPT" href="https://bggpt.ai" icon="tabler:message-chatbot" target="_blank" />
+            <Button variant="secondary" text={hero.bg.cta} href="mailto:bggpt@insait.ai" icon="tabler:api" />
+            <Button variant="secondary" text={hero.bg.ctaSecondary} href={huggingFaceHref} icon="tabler:download" target="_blank" />
           </div>
         </div>
       </div>
     </div>
   </section>
+
 </Layout>

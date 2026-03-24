@@ -25,6 +25,18 @@ const translationsJson = JSON.stringify(clientTranslations);
 
     function setLang(lang) {
       localStorage.setItem(STORAGE_KEY, lang);
+
+      // If on a blog post page, redirect to the sibling language version
+      var path = window.location.pathname.replace(/\/$/, '');
+      var otherLang = lang === 'en' ? 'bg' : 'en';
+      if (path.match(/\/blog\/.+-(?:en|bg)$/)) {
+        var siblingPath = path.replace(/-(?:en|bg)$/, '-' + lang);
+        if (siblingPath !== window.location.pathname) {
+          window.location.href = siblingPath;
+          return;
+        }
+      }
+
       applyLang(lang);
     }
 

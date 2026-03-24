@@ -64,6 +64,15 @@ const { post, url } = Astro.props;
       >
         {post.title}
       </h1>
+      {
+        post.lang === 'bg' && (
+          <div class="max-w-3xl mx-auto mt-4 px-4 sm:px-6">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium" style="background: linear-gradient(135deg, #FF5151 0%, #ff7b7b 100%); color: white;">
+              Изцяло преведено с <strong>BgGPT 3.0</strong>
+            </div>
+          </div>
+        )
+      }
       <p
         class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted dark:text-slate-400 text-justify"
       >
@@ -79,7 +88,6 @@ const { post, url } = Astro.props;
             sizes="(max-width: 900px) 400px, 900px"
             alt={post?.excerpt || ''}
             width={900}
-            height={506}
             loading="eager"
             decoding="async"
           />

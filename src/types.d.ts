@@ -36,6 +36,9 @@ export interface Post {
   /**  */
   draft?: boolean;
 
+  /** Language of the post */
+  lang?: 'en' | 'bg';
+
   /**  */
   Content?: AstroComponentFactory;
   content?: string;

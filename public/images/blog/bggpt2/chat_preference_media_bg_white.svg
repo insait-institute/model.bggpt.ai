@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1150pt"
+   height="504pt"
+   viewBox="0 0 1150 504"
+   version="1.1"
+   id="svg196"
+   sodipodi:docname="chat_pref_bg_white.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview196"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     inkscape:zoom="0.66687875"
+     inkscape:cx="723.51983"
+     inkscape:cy="345.64004"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg196" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:date>2024-11-18T23:53:30.517058</dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Matplotlib v3.8.3, https://matplotlib.org/</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1">
+    <style
+       type="text/css"
+       id="style1">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+  </defs>
+  <g
+     id="figure_1"
+     transform="translate(108)">
+    <g
+       id="patch_1">
+      <path
+         d="M 0,504 H 936 V 0 H 0 Z"
+         style="fill:#ffffff"
+         id="path1" />
+    </g>
+    <g
+       id="axes_1">
+      <g
+         id="patch_2">
+        <path
+           d="M 18.401048,438.12 H 910.35395 V 69.24 H 18.401048 Z"
+           style="fill:#ffffff"
+           id="path2" />
+      </g>
+      <g
+         id="matplotlib.axis_1">
+        <g
+           id="xtick_1">
+          <g
+             id="line2d_1">
+            <path
+               d="M 19.29122,438.12 V 69.24"
+               clip-path="url(#pb2883e1eff)"
+               style="fill:none;stroke:#1a1a1a;stroke-linecap:square"
+               id="path3" />
+          </g>
+          <g
+             id="line2d_2">
+            <defs
+               id="defs3">
+              <path
+                 id="m51c7a22ab1"
+                 d="M 0,0 V 3.5"
+                 style="stroke:#1a1a1a;stroke-width:0.8" />
+            </defs>
+            <g
+               id="g3">
+              <use
+                 xlink:href="#m51c7a22ab1"
+                 x="19.29122"
+                 y="438.12"
+                 style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.8"
+                 id="use3" />
+            </g>
+          </g>
+          <g
+             id="text_1">
+            <!-- 0% -->
+            <g
+               style="opacity:0.6;fill:#1a1a1a"
+               transform="matrix(0.13,0,0,-0.13,10.876767,454.87)"
+               id="g5">
+              <defs
+                 id="defs4">
+                <path
+                   id="Roboto-Regular-30"
+                   d="M 3234,1944 Q 3234,825 2848,381 2463,-63 1800,-63 1156,-63 764,368 372,800 359,1872 v 766 q 0,1115 391,1545 391,430 1044,430 653,0 1040,-418 388,-417 400,-1486 z m -581,790 q 0,769 -219,1088 -218,319 -640,319 -406,0 -627,-310 Q 947,3522 941,2778 v -928 q 0,-762 223,-1100 224,-337 636,-337 422,0 636,332 214,333 217,1080 z"
+                   transform="scale(0.015625)" />
+                <path
+                   id="Roboto-Regular-25"
+                   d="m 328,3675 q 0,388 250,664 250,277 681,277 438,0 686,-277 249,-276 249,-664 v -241 q 0,-381 -247,-658 -247,-276 -682,-276 -434,0 -686,276 -251,277 -251,658 z m 435,-241 q 0,-215 123,-387 123,-172 380,-172 250,0 371,170 122,171 122,389 v 241 q 0,219 -123,392 -123,174 -377,174 -250,0 -373,-174 Q 763,3894 763,3675 Z M 3619,3903 1397,347 1072,553 3294,4109 Z M 2544,1116 q 0,384 250,660 250,277 681,277 438,0 686,-277 248,-276 248,-660 V 872 q 0,-384 -247,-661 -246,-277 -681,-277 -437,0 -687,277 -250,277 -250,661 z m 434,-244 q 0,-219 123,-391 124,-172 380,-172 253,0 375,170 122,171 122,393 v 244 q 0,222 -124,392 -123,170 -379,170 -250,0 -374,-170 -123,-170 -123,-392 z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#Roboto-Regular-30"
+                 id="use4" />
+              <use
+                 xlink:href="#Roboto-Regular-25"
+                 x="56.201172"
+                 id="use5" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_2">
+          <g
+             id="line2d_3">
+            <path
+               d="M 197.32573,438.12 V 69.24"
+               clip-path="url(#pb2883e1eff)"
+               style="fill:none;stroke:#1a1a1a;stroke-linecap:square"
+               id="path5" />
+          </g>
+          <g
+             id="line2d_4">
+            <g
+               id="g6">
+              <use
+                 xlink:href="#m51c7a22ab1"
+                 x="197.32573"
+                 y="438.12"
+                 style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.8"
+                 id="use6" />
+            </g>
+          </g>
+          <g
+             id="text_2">
+            <!-- 20% -->
+            <g
+               style="opacity:0.6;fill:#1a1a1a"
+               transform="matrix(0.13,0,0,-0.13,185.25808,454.87)"
+               id="g9">
+              <defs
+                 id="defs6">
+                <path
+                   id="Roboto-Regular-32"
+                   d="M 3359,475 V 0 H 381 v 416 l 1544,1718 q 381,432 514,685 133,253 133,509 0,335 -208,572 -208,238 -586,238 -456,0 -681,-260 Q 872,3619 872,3213 H 294 q 0,575 378,987 378,413 1106,413 644,0 1008,-335 364,-334 364,-881 0,-400 -247,-805 -247,-404 -606,-795 L 1078,475 Z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#Roboto-Regular-32"
+                 id="use7" />
+              <use
+                 xlink:href="#Roboto-Regular-30"
+                 x="56.201172"
+                 id="use8" />
+              <use
+                 xlink:href="#Roboto-Regular-25"
+                 x="112.40234"
+                 id="use9" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_3">
+          <g
+             id="line2d_5">
+            <path
+               d="M 375.36024,438.12 V 69.24"
+               clip-path="url(#pb2883e1eff)"
+               style="fill:none;stroke:#1a1a1a;stroke-linecap:square"
+               id="path9" />
+          </g>
+          <g
+             id="line2d_6">
+            <g
+               id="g10">
+              <use
+                 xlink:href="#m51c7a22ab1"
+                 x="375.36023"
+                 y="438.12"
+                 style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.8"
+                 id="use10" />
+            </g>
+          </g>
+          <g
+             id="text_3">
+            <!-- 40% -->
+            <g
+               style="opacity:0.6;fill:#1a1a1a"
+               transform="matrix(0.13,0,0,-0.13,363.29259,454.87)"
+               id="g13">
+              <defs
+                 id="defs10">
+                <path
+                   id="Roboto-Regular-34"
+                   d="m 166,1397 2037,3153 h 616 V 1531 h 634 V 1056 H 2819 V 0 H 2241 V 1056 H 166 Z m 656,134 h 1419 v 2235 l -72,-128 z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#Roboto-Regular-34"
+                 id="use11" />
+              <use
+                 xlink:href="#Roboto-Regular-30"
+                 x="56.201172"
+                 id="use12" />
+              <use
+                 xlink:href="#Roboto-Regular-25"
+                 x="112.40234"
+                 id="use13" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_4">
+          <g
+             id="line2d_7">
+            <path
+               d="M 553.39476,438.12 V 69.24"
+               clip-path="url(#pb2883e1eff)"
+               style="fill:none;stroke:#1a1a1a;stroke-linecap:square"
+               id="path13" />
+          </g>
+          <g
+             id="line2d_8">
+            <g
+               id="g14">
+              <use
+                 xlink:href="#m51c7a22ab1"
+                 x="553.39478"
+                 y="438.12"
+                 style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.8"
+                 id="use14" />
+            </g>
+          </g>
+          <g
+             id="text_4">
+            <!-- 60% -->
+            <g
+               style="opacity:0.6;fill:#1a1a1a"
+               transform="matrix(0.13,0,0,-0.13,541.3271,454.87)"
+               id="g17">
+              <defs
+                 id="defs14">
+                <path
+                   id="Roboto-Regular-36"
+                   d="M 3291,1484 Q 3291,838 2930,387 2569,-63 1878,-63 1388,-63 1063,198 738,459 577,861 416,1263 416,1684 v 272 q 0,641 179,1238 180,597 652,979 472,383 1350,383 h 50 v -490 q -606,0 -942,-213 -336,-212 -500,-551 -164,-339 -199,-727 363,409 978,409 454,0 743,-219 289,-218 426,-564 138,-345 138,-717 z M 997,1666 q 0,-607 270,-929 271,-321 611,-321 400,0 620,292 221,292 221,748 0,407 -203,728 -203,322 -625,322 -303,0 -550,-181 -247,-181 -344,-441 z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#Roboto-Regular-36"
+                 id="use15" />
+              <use
+                 xlink:href="#Roboto-Regular-30"
+                 x="56.201172"
+                 id="use16" />
+              <use
+                 xlink:href="#Roboto-Regular-25"
+                 x="112.40234"
+                 id="use17" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_5">
+          <g
+             id="line2d_9">
+            <path
+               d="M 731.42927,438.12 V 69.24"
+               clip-path="url(#pb2883e1eff)"
+               style="fill:none;stroke:#1a1a1a;stroke-linecap:square"
+               id="path17" />
+          </g>
+          <g
+             id="line2d_10">
+            <g
+               id="g18">
+              <use
+                 xlink:href="#m51c7a22ab1"
+                 x="731.42926"
+                 y="438.12"
+                 style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.8"
+                 id="use18" />
+            </g>
+          </g>
+          <g
+             id="text_5">
+            <!-- 80% -->
+            <g
+               style="opacity:0.6;fill:#1a1a1a"
+               transform="matrix(0.13,0,0,-0.13,719.36161,454.87)"
+               id="g21">
+              <defs
+                 id="defs18">
+                <path
+                   id="Roboto-Regular-38"
+                   d="M 3244,1231 Q 3244,606 2826,271 2409,-63 1796,-63 1184,-63 767,271 350,606 350,1231 q 0,382 204,674 205,292 555,442 -303,147 -480,415 -176,269 -176,604 0,597 380,922 380,325 961,325 584,0 964,-325 380,-325 380,-922 0,-338 -182,-605 -181,-267 -484,-414 353,-150 562,-444 210,-294 210,-672 z m -685,2125 q 0,341 -213,561 -212,221 -553,221 -340,0 -550,-211 -209,-211 -209,-571 0,-353 209,-566 210,-212 554,-212 341,0 551,212 211,213 211,566 z m 104,-2112 q 0,381 -243,621 -242,241 -629,241 -397,0 -630,-241 -233,-240 -233,-621 0,-394 233,-613 233,-218 636,-218 403,0 634,218 232,219 232,613 z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#Roboto-Regular-38"
+                 id="use19" />
+              <use
+                 xlink:href="#Roboto-Regular-30"
+                 x="56.201172"
+                 id="use20" />
+              <use
+                 xlink:href="#Roboto-Regular-25"
+                 x="112.40234"
+                 id="use21" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="xtick_6">
+          <g
+             id="line2d_11">
+            <path
+               d="M 909.46378,438.12 V 69.24"
+               clip-path="url(#pb2883e1eff)"
+               style="fill:none;stroke:#1a1a1a;stroke-linecap:square"
+               id="path21" />
+          </g>
+          <g
+             id="line2d_12">
+            <g
+               id="g22">
+              <use
+                 xlink:href="#m51c7a22ab1"
+                 x="909.46381"
+                 y="438.12"
+                 style="fill:#1a1a1a;stroke:#1a1a1a;stroke-width:0.8"
+                 id="use22" />
+            </g>
+          </g>
+          <g
+             id="text_6">
+            <!-- 100% -->
+            <g
+               style="opacity:0.6;fill:#1a1a1a"
+               transform="matrix(0.13,0,0,-0.13,893.74292,454.87)"
+               id="g26">
+              <defs
+                 id="defs22">
+                <path
+                   id="Roboto-Regular-31"
+                   d="M 2278,4575 V 0 H 1700 V 3853 L 534,3428 v 522 l 1654,625 z"
+                   transform="scale(0.015625)" />
+              </defs>
+              <use
+                 xlink:href="#Roboto-Regular-31"
+                 id="use23" />
+              <use
+                 xlink:href="#Roboto-Regular-30"
+                 x="56.201172"
+                 id="use24" />
+              <use
+                 xlink:href="#Roboto-Regular-30"
+                 x="112.40234"
+                 id="use25" />
+              <use
+                 xlink:href="#Roboto-Regular-25"
+                 x="168.60352"
+                 id="use26" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="text_7">
+          <!-- Процент от предпочитаните отговори спрямо BgGPT 27B -->
+          <g
+             style="fill:#1a1a1a"
+             transform="matrix(0.16,0,0,-0.16,248.51,489.42563)"
+             id="g77">
+            <defs
+               id="defs26">
+              <path
+                 id="Roboto-Regular-41f"
+                 d="M 4003,4550 V 0 H 3403 V 4056 H 1159 V 0 H 556 v 4550 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-440"
+                 d="m 1984,-63 q -609,0 -965,391 V -1300 H 438 v 4681 h 531 l 28,-372 q 356,435 978,435 641,0 981,-475 341,-475 341,-1250 v -66 Q 3297,913 2955,425 2613,-63 1984,-63 Z m -178,3019 q -525,0 -787,-465 V 872 q 265,-459 794,-459 468,0 685,368 218,369 218,872 v 66 q 0,503 -218,870 -217,367 -692,367 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-43e"
+                 d="m 288,1725 q 0,734 412,1226 413,493 1122,493 709,0 1121,-483 413,-483 423,-1205 V 1653 Q 3366,919 2952,428 2538,-63 1828,-63 1116,-63 702,428 288,919 288,1653 Z m 578,-72 q 0,-503 239,-872 239,-368 723,-368 472,0 712,364 241,364 244,867 v 81 q 0,497 -241,870 -240,374 -721,374 -478,0 -717,-374 -239,-373 -239,-870 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-446"
+                 d="m 3606,475 -56,-1478 H 3034 V 0 H 491 v 3381 h 578 V 475 h 1556 v 2906 h 581 V 475 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-435"
+                 d="M 3116,591 Q 2950,341 2647,139 2344,-63 1844,-63 1138,-63 714,396 291,856 291,1572 v 131 q 0,553 211,942 211,389 548,594 338,205 719,205 725,0 1057,-474 333,-473 333,-1182 V 1528 H 872 q 12,-465 276,-792 265,-327 727,-327 306,0 518,125 213,125 373,335 z M 1769,2969 q -344,0 -582,-250 -237,-250 -296,-719 h 1690 v 44 q -22,337 -195,631 -173,294 -617,294 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-43d"
+                 d="M 2622,0 V 1447 H 1069 V 0 H 491 v 3381 h 578 V 1916 h 1553 v 1465 h 581 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-442"
+                 d="m 125,2913 v 468 H 2953 V 2913 H 1819 V 0 h -581 v 2913 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-20"
+                 transform="scale(0.015625)"
+                 d="" />
+              <path
+                 id="Roboto-Regular-43f"
+                 d="M 491,0 V 3381 H 3206 V 0 H 2625 V 2903 H 1069 V 0 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-434"
+                 d="M 1050,3381 H 3228 V 475 h 435 V -997 H 3084 V 0 H 725 V -997 H 144 l 3,1472 h 266 q 137,163 262,347 125,184 212,485 88,302 110,802 z M 1100,475 H 2650 V 2847 H 1606 l -31,-809 Q 1519,1041 1100,475 Z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-447"
+                 d="M 2991,3381 V 0 h -578 v 1228 q -360,-103 -782,-103 -600,0 -953,312 -353,313 -353,963 v 988 H 903 V 2359 q 16,-756 728,-756 391,0 782,103 v 1675 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-438"
+                 d="m 1066,916 1559,2465 h 581 V 0 H 2625 V 2466 L 1066,0 H 491 v 3381 h 575 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-430"
+                 d="M 2528,0 Q 2472,122 2447,356 2284,184 2040,60 1797,-63 1484,-63 966,-63 653,228 341,519 341,941 q 0,543 412,826 413,283 1110,283 h 571 v 269 q 0,300 -180,479 -179,180 -532,180 -328,0 -530,-161 Q 991,2656 991,2444 H 413 q 0,362 365,681 366,319 978,319 550,0 903,-282 354,-281 354,-849 V 794 q 0,-469 118,-744 V 0 Z m -959,444 q 312,0 542,156 230,156 323,347 v 697 h -537 q -975,-19 -975,-625 0,-241 162,-408 163,-167 485,-167 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-433"
+                 d="M 2625,3381 V 2903 H 1063 V 0 H 484 v 3381 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-432"
+                 d="M 3328,963 Q 3328,484 2979,242 2631,0 2028,0 H 494 v 3381 h 1319 q 643,0 1019,-227 377,-226 377,-701 0,-503 -550,-709 325,-78 497,-294 172,-216 172,-487 z M 1072,2913 v -963 h 747 q 809,0 809,475 0,475 -775,488 z M 2747,978 q 0,497 -684,510 H 1072 V 469 h 956 q 719,0 719,509 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-441"
+                 d="m 1794,413 q 309,0 542,184 233,184 255,472 h 550 Q 3119,616 2725,276 2331,-63 1794,-63 1031,-63 661,440 291,944 291,1625 v 131 q 0,682 370,1185 370,503 1133,503 594,0 959,-352 366,-351 388,-873 h -550 q -22,312 -236,531 -214,219 -561,219 -356,0 -558,-182 -202,-181 -285,-459 -82,-278 -82,-572 v -131 q 0,-297 81,-575 81,-278 282,-458 202,-179 562,-179 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-44f"
+                 d="M 2444,0 V 1316 H 1569 L 772,0 H 147 l 850,1403 q -325,119 -499,369 -173,250 -173,578 0,444 336,737 336,294 948,294 H 3022 V 0 Z m 0,1791 v 1122 h -835 q -371,0 -537,-179 -166,-178 -166,-390 0,-206 150,-380 150,-173 485,-173 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-43c"
+                 d="m 2384,769 1150,2612 h 725 V 0 H 3678 V 2456 L 2584,0 H 2184 L 1072,2506 V 0 H 494 v 3381 h 747 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-42"
+                 d="M 3625,1313 Q 3625,675 3214,337 2803,0 2122,0 H 528 v 4550 h 1491 q 700,0 1092,-289 392,-289 392,-923 0,-316 -180,-562 -179,-245 -492,-379 385,-106 589,-403 205,-297 205,-681 z M 1131,4056 V 2613 h 907 q 387,0 624,193 238,194 238,538 0,697 -844,712 z M 3025,1306 q 0,382 -208,602 -208,220 -667,220 H 1131 V 491 h 991 q 428,0 665,220 238,220 238,595 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-67"
+                 d="m 1725,-1334 q -262,0 -644,128 -381,128 -609,459 l 303,344 q 375,-456 906,-456 410,0 653,230 244,229 244,673 V 341 Q 2234,-63 1631,-63 1022,-63 662,425 303,913 303,1653 v 66 q 0,775 358,1250 358,475 977,475 621,0 965,-438 l 28,375 h 525 V 72 q 0,-672 -400,-1039 -400,-367 -1031,-367 z M 881,1653 q 0,-503 211,-864 211,-361 680,-361 550,0 806,500 v 1541 q -109,209 -303,348 -194,139 -497,139 -472,0 -685,-367 -212,-367 -212,-870 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-47"
+                 d="M 3891,2266 V 600 Q 3763,413 3403,175 3044,-63 2281,-63 1450,-63 915,507 381,1078 381,2100 v 353 q 0,1016 475,1588 475,572 1357,572 781,0 1185,-394 405,-394 493,-1000 h -603 q -63,369 -309,634 -245,266 -766,266 -629,0 -926,-443 Q 991,3234 988,2475 v -375 q 0,-787 356,-1230 356,-442 940,-442 485,0 700,114 216,114 307,217 V 1778 H 2238 v 488 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-50"
+                 d="M 1131,1784 V 0 H 528 v 4550 h 1678 q 775,0 1186,-391 411,-390 411,-996 0,-660 -411,-1020 -411,-359 -1186,-359 z m 0,2272 V 2275 h 1075 q 532,0 763,247 231,247 231,634 0,350 -231,625 -231,275 -763,275 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-54"
+                 d="m 156,4056 v 494 H 3672 V 4056 H 2209 V 0 h -593 v 4056 z"
+                 transform="scale(0.015625)" />
+              <path
+                 id="Roboto-Regular-37"
+                 d="M 3319,4550 V 4225 L 1434,0 H 825 L 2706,4075 H 244 v 475 z"
+                 transform="scale(0.015625)" />
+            </defs>
+            <use
+               xlink:href="#Roboto-Regular-41f"
+               id="use27" />
+            <use
+               xlink:href="#Roboto-Regular-440"
+               x="71.337891"
+               id="use28" />
+            <use
+               xlink:href="#Roboto-Regular-43e"
+               x="127.49023"
+               id="use29" />
+            <use
+               xlink:href="#Roboto-Regular-446"
+               x="184.52148"
+               id="use30" />
+            <use
+               xlink:href="#Roboto-Regular-435"
+               x="243.79883"
+               id="use31" />
+            <use
+               xlink:href="#Roboto-Regular-43d"
+               x="296.82617"
+               id="use32" />
+            <use
+               xlink:href="#Roboto-Regular-442"
+               x="354.49219"
+               id="use33" />
+            <use
+               xlink:href="#Roboto-Regular-20"
+               x="402.58789"
+               id="use34" />
+            <use
+               xlink:href="#Roboto-Regular-43e"
+               x="427.39258"
+               id="use35" />
+            <use
+               xlink:href="#Roboto-Regular-442"
+               x="484.42383"
+               id="use36" />
+            <use
+               xlink:href="#Roboto-Regular-20"
+               x="532.51953"
+               id="use37" />
+            <use
+               xlink:href="#Roboto-Regular-43f"
+               x="557.32422"
+               id="use38" />
+            <use
+               xlink:href="#Roboto-Regular-440"
+               x="615.03906"
+               id="use39" />
+            <use
+               xlink:href="#Roboto-Regular-435"
+               x="671.19141"
+               id="use40" />
+            <use
+               xlink:href="#Roboto-Regular-434"
+               x="724.21875"
+               id="use41" />
+            <use
+               xlink:href="#Roboto-Regular-43f"
+               x="784.57031"
+               id="use42" />
+            <use
+               xlink:href="#Roboto-Regular-43e"
+               x="842.28516"
+               id="use43" />
+            <use
+               xlink:href="#Roboto-Regular-447"
+               x="899.31641"
+               id="use44" />
+            <use
+               xlink:href="#Roboto-Regular-438"
+               x="953.71094"
+               id="use45" />
+            <use
+               xlink:href="#Roboto-Regular-442"
+               x="1011.4258"
+               id="use46" />
+            <use
+               xlink:href="#Roboto-Regular-430"
+               x="1059.5215"
+               id="use47" />
+            <use
+               xlink:href="#Roboto-Regular-43d"
+               x="1113.916"
+               id="use48" />
+            <use
+               xlink:href="#Roboto-Regular-438"
+               x="1171.582"
+               id="use49" />
+            <use
+               xlink:href="#Roboto-Regular-442"
+               x="1229.2969"
+               id="use50" />
+            <use
+               xlink:href="#Roboto-Regular-435"
+               x="1277.3926"
+               id="use51" />
+            <use
+               xlink:href="#Roboto-Regular-20"
+               x="1330.4199"
+               id="use52" />
+            <use
+               xlink:href="#Roboto-Regular-43e"
+               x="1355.2246"
+               id="use53" />
+            <use
+               xlink:href="#Roboto-Regular-442"
+               x="1412.2559"
+               id="use54" />
+            <use
+               xlink:href="#Roboto-Regular-433"
+               x="1460.3516"
+               id="use55" />
+            <use
+               xlink:href="#Roboto-Regular-43e"
+               x="1502.3438"
+               id="use56" />
+            <use
+               xlink:href="#Roboto-Regular-432"
+               x="1559.375"
+               id="use57" />
+            <use
+               xlink:href="#Roboto-Regular-43e"
+               x="1616.5527"
+               id="use58" />
+            <use
+               xlink:href="#Roboto-Regular-440"
+               x="1673.584"
+               id="use59" />
+            <use
+               xlink:href="#Roboto-Regular-438"
+               x="1729.7363"
+               id="use60" />
+            <use
+               xlink:href="#Roboto-Regular-20"
+               x="1787.4512"
+               id="use61" />
+            <use
+               xlink:href="#Roboto-Regular-441"
+               x="1812.2559"
+               id="use62" />
+            <use
+               xlink:href="#Roboto-Regular-43f"
+               x="1864.5996"
+               id="use63" />
+            <use
+               xlink:href="#Roboto-Regular-440"
+               x="1922.3145"
+               id="use64" />
+            <use
+               xlink:href="#Roboto-Regular-44f"
+               x="1978.4668"
+               id="use65" />
+            <use
+               xlink:href="#Roboto-Regular-43c"
+               x="2033.3496"
+               id="use66" />
+            <use
+               xlink:href="#Roboto-Regular-43e"
+               x="2107.5195"
+               id="use67" />
+            <use
+               xlink:href="#Roboto-Regular-20"
+               x="2164.5508"
+               id="use68" />
+            <use
+               xlink:href="#Roboto-Regular-42"
+               x="2189.3555"
+               id="use69" />
+            <use
+               xlink:href="#Roboto-Regular-67"
+               x="2251.6602"
+               id="use70" />
+            <use
+               xlink:href="#Roboto-Regular-47"
+               x="2307.8125"
+               id="use71" />
+            <use
+               xlink:href="#Roboto-Regular-50"
+               x="2375.9277"
+               id="use72" />
+            <use
+               xlink:href="#Roboto-Regular-54"
+               x="2439.0137"
+               id="use73" />
+            <use
+               xlink:href="#Roboto-Regular-20"
+               x="2498.6816"
+               id="use74" />
+            <use
+               xlink:href="#Roboto-Regular-32"
+               x="2523.4863"
+               id="use75" />
+            <use
+               xlink:href="#Roboto-Regular-37"
+               x="2579.6875"
+               id="use76" />
+            <use
+               xlink:href="#Roboto-Regular-42"
+               x="2635.8887"
+               id="use77" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="matplotlib.axis_2" />
+      <g
+         clip-path="url(#pb2883e1eff)"
+         id="g78">
+        <image
+           xlink:href="data:image/png;base64, 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"
+           id="imagee4e7b217aa"
+           transform="matrix(1,0,0,-1,0,66.24)"
+           x="19.29122"
+           y="-343.18933"
+           width="461.51999"
+           height="66.239998" />
+      </g>
+      <g
+         id="patch_3">
+        <path
+           d="M 480.40061,409.42933 H 909.46378 V 343.85067 H 480.40061 Z"
+           clip-path="url(#pb2883e1eff)"
+           style="fill:#808080"
+           id="path78" />
+      </g>
+      <g
+         clip-path="url(#pb2883e1eff)"
+         id="g79">
+        <image
+           xlink:href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAycAAABcCAYAAAB0pMo2AAACp0lEQVR4nO3X0U7CMABAUfHD+XODTwYRN7sVxzWe82S2tnRSCPf0dj5fXj5crn+OW5gzvNT3Az9fPS0O37Pfhfm7lvr52W+fY3K/u96fmwU2Xb4fdh14Wh609cbqK05NHzlbq+tO/L8f+V6tLDV1vv7YZ2nX/OHhWzd98H7vpkTO5sDlgZsDLzkz/5fO5vCwybO1ec9H7/frlGd+l+x59sjZ3HBr46CVKUf/5nvC2byZfvR333/7LO2Yv+B1ajYAAMCDiBMAACBBnAAAAAniBAAASBAnAABAgjgBAAASxAkAAJAgTgAAgARxAgAAJIgTAAAgQZwAAAAJ4gQAAEgQJwAAQII4AQAAEsQJAACQIE4AAIAEcQIAACSIEwAAIEGcAAAACeIEAABIECcAAECCOAEAABLECQAAkCBOAACABHECAAAkiBMAACBBnAAAAAniBAAASBAnAABAgjgBAAASxAkAAJAgTgAAgARxAgAAJIgTAAAgQZwAAAAJ4gQAAEgQJwAAQII4AQAAEsQJAACQIE4AAIAEcQIAACSIEwAAIEGcAAAACeIEAABIECcAAECCOAEAABLECQAAkCBOAACABHECAAAkiBMAACBBnAAAAAniBAAASBAnAABAgjgBAAASxAkAAJAgTgAAgARxAgAAJIgTAAAgQZwAAAAJ4gQAAEgQJwAAQII4AQAAEsQJAACQIE4AAIAEcQIAACSIEwAAIEGcAAAACeIEAABIECcAAECCOAEAABLECQAAkCBOAACABHECAAAkiBMAACBBnAAAAAniBAAASBAnAABAgjgBAAASxAkAAJAgTgAAgARxAgAAJIgTAAAgQZwAAAAJ4gQAAEgQJwAAQII4AQAAEsQJAACQIE4AAIAEcQIAACSIEwAAIEGcAAAACe/pt2NVj3TflAAAAABJRU5ErkJggg=="
+           id="imagede6d4405c7"
+           transform="matrix(1,0,0,-1,0,66.24)"
+           x="19.29122"
+           y="-261.216"
+           width="581.03998"
+           height="66.239998" />
+      </g>
+      <g
+         id="patch_4">
+        <path
+           d="M 600.0398,327.456 H 909.46378 V 261.87733 H 600.0398 Z"
+           clip-path="url(#pb2883e1eff)"
+           style="fill:#808080"
+           id="path79" />
+      </g>
+      <g
+         clip-path="url(#pb2883e1eff)"
+         id="g80">
+        <image
+           xlink:href="data:image/png;base64, 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"
+           id="image575c3af8cd"
+           transform="matrix(1,0,0,-1,0,66.24)"
+           x="19.29122"
+           y="-179.24266"
+           width="450"
+           height="66.239998" />
+      </g>
+      <g
+         id="patch_5">
+        <path
+           d="M 468.82836,245.48267 H 909.46378 V 179.904 H 468.82836 Z"
+           clip-path="url(#pb2883e1eff)"
+           style="fill:#808080"
+           id="path80" />
+      </g>
+      <g
+         clip-path="url(#pb2883e1eff)"
+         id="g81">
+        <image
+           xlink:href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAA1MAAABcCAYAAACLBu/UAAACpklEQVR4nO3X0W6CMABAUdiH++cLezKbOky94MTsnKcF2wbXgrnz5+m0TGfL95+PWZk3vNz6wJ+fzHen1XtfmZ+WuzNp+X3UvPm+pw37drHIQ5dvh10OvNmrofXK93jevl1fnVfXPuAejh3Fdv5uphz42dvhHTQ+bYfzm5Y7wB6+7B10hGfvyb8dw8M2nr/8b9h67wc4vy/bwyOc32l6yftzlz38w/fnO/3+D1we+HBwyo7P3ju9g658bF4BAADgHxJTAAAAgZgCAAAIxBQAAEAgpgAAAAIxBQAAEIgpAACAQEwBAAAEYgoAACAQUwAAAIGYAgAACMQUAABAIKYAAAACMQUAABCIKQAAgEBMAQAABGIKAAAgEFMAAACBmAIAAAjEFAAAQCCmAAAAAjEFAAAQiCkAAIBATAEAAARiCgAAIBBTAAAAgZgCAAAIxBQAAEAgpgAAAAIxBQAAEIgpAACAQEwBAAAEYgoAACAQUwAAAIGYAgAACMQUAABAIKYAAAACMQUAABCIKQAAgEBMAQAABGIKAAAgEFMAAACBmAIAAAjEFAAAQCCmAAAAAjEFAAAQiCkAAIBATAEAAARiCgAAIBBTAAAAgZgCAAAIxBQAAEAgpgAAAAIxBQAAEIgpAACAQEwBAAAEYgoAACAQUwAAAIGYAgAACMQUAABAIKYAAAACMQUAABCIKQAAgEBMAQAABGIKAAAgEFMAAACBmAIAAAjEFAAAQCCmAAAAAjEFAAAQiCkAAIBATAEAAARiCgAAIBBTAAAAgZgCAAAIxBQAAEAgpgAAAAIxBQAAEIgpAACAQEwBAAAEYgoAACAQUwAAAIGYAgAACMQUAABAIKYAAAACMQUAABCIKQAAgEBMAQAABGIKAAAgEFMAAACBmAIAAAi+AI3gY1USIMsqAAAAAElFTkSuQmCC"
+           id="imagecdb8a980cc"
+           transform="matrix(1,0,0,-1,0,66.24)"
+           x="19.29122"
+           y="-97.269333"
+           width="612.71997"
+           height="66.239998" />
+      </g>
+      <g
+         id="patch_6">
+        <path
+           d="M 631.55191,163.50933 H 909.46378 V 97.930667 H 631.55191 Z"
+           clip-path="url(#pb2883e1eff)"
+           style="fill:#808080"
+           id="path81" />
+      </g>
+      <g
+         id="line2d_13">
+        <path
+           d="M 464.3775,438.12 V 69.24"
+           clip-path="url(#pb2883e1eff)"
+           style="fill:none;stroke:#1a1a1a;stroke-dasharray:7, 3.5;stroke-dashoffset:0;stroke-opacity:0.6"
+           id="path82" />
+      </g>
+      <g
+         id="patch_7">
+        <path
+           d="M 18.401048,438.12 V 69.24"
+           style="fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-linejoin:miter"
+           id="path83" />
+      </g>
+      <g
+         id="text_8">
+        <!-- BgGPT -->
+        <g
+           style="fill:#ffffff"
+           transform="matrix(0.28,0,0,-0.28,63.799848,384.16062)"
+           id="g87">
+          <defs
+             id="defs83">
+            <path
+               id="Roboto-Bold-42"
+               d="M 3788,1341 Q 3788,684 3369,345 2950,6 2175,0 H 406 v 4550 h 1597 q 791,0 1238,-303 447,-303 447,-941 0,-309 -157,-569 -156,-259 -493,-393 400,-100 575,-388 175,-287 175,-615 z M 1347,3791 V 2647 h 656 q 744,0 744,562 0,569 -713,582 z M 2850,1350 q 0,613 -619,634 H 1347 V 756 h 800 q 359,0 531,169 172,169 172,425 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-67"
+               d="m 1681,-1331 q -306,0 -673,128 -367,128 -586,400 l 400,550 q 334,-375 822,-375 359,0 559,192 200,192 200,549 V 294 Q 2084,-63 1581,-63 953,-63 587,418 222,900 216,1625 v 91 q 0,772 367,1250 367,478 1005,478 559,0 868,-381 l 35,318 h 818 V 116 q 0,-697 -452,-1072 -451,-375 -1176,-375 z m -562,2981 q 0,-406 167,-692 167,-286 523,-286 413,0 594,312 v 1419 q -178,310 -587,310 -353,0 -525,-290 -172,-289 -172,-707 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-47"
+               d="M 4009,2391 V 575 Q 3847,381 3433,159 3019,-63 2269,-63 1384,-63 839,510 294,1084 294,2138 v 271 q 0,1054 522,1630 522,577 1387,577 885,0 1306,-425 422,-425 497,-1088 h -912 q -53,344 -247,550 -194,206 -619,206 -922,0 -978,-1275 l -3,-446 q 0,-719 267,-1082 267,-362 805,-362 337,0 506,76 169,77 244,149 v 784 h -850 v 688 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-50"
+               d="M 1347,1606 V 0 H 406 v 4550 h 1778 q 807,0 1258,-425 452,-425 452,-1078 0,-659 -452,-1050 -451,-391 -1258,-391 z m 0,2185 V 2363 h 837 q 404,0 582,190 178,191 178,488 0,297 -178,523 -178,227 -582,227 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-54"
+               d="m 128,3791 v 759 H 3831 V 3791 H 2441 V 0 h -938 v 3791 z"
+               transform="scale(0.015625)" />
+          </defs>
+          <use
+             xlink:href="#Roboto-Bold-42"
+             id="use83" />
+          <use
+             xlink:href="#Roboto-Bold-67"
+             x="63.818359"
+             id="use84" />
+          <use
+             xlink:href="#Roboto-Bold-47"
+             x="120.94727"
+             id="use85" />
+          <use
+             xlink:href="#Roboto-Bold-50"
+             x="189.0625"
+             id="use86" />
+          <use
+             xlink:href="#Roboto-Bold-54"
+             x="253.61328"
+             id="use87" />
+        </g>
+      </g>
+      <g
+         id="text_9">
+        <!-- Claude Sonnet -->
+        <g
+           style="fill:#ffffff"
+           transform="matrix(0.28,0,0,-0.28,681.60765,384.29625)"
+           id="g100">
+          <defs
+             id="defs87">
+            <path
+               id="Roboto-Bold-43"
+               d="m 3044,1516 h 937 Q 3934,822 3461,379 2988,-63 2150,-63 1275,-63 772,526 269,1116 269,2125 v 297 q 0,1009 515,1601 516,593 1375,593 854,0 1307,-455 453,-455 518,-1155 h -937 q -31,407 -227,624 -195,217 -661,217 -912,0 -937,-1347 v -375 q 0,-706 214,-1063 214,-356 714,-356 444,0 651,201 208,202 243,609 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-6c"
+               d="M 1303,4800 V 0 H 397 v 4800 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-61"
+               d="m 2306,0 q -56,119 -90,303 -328,-366 -853,-366 -485,0 -816,286 -331,286 -331,727 0,531 393,823 394,293 1166,293 h 403 v 197 q 0,234 -120,373 -120,139 -380,139 -484,0 -484,-406 H 291 q 0,440 390,757 391,318 1047,318 585,0 970,-297 386,-297 386,-891 V 750 q 7,-450 135,-697 V 0 Z m -747,628 q 229,0 389,101 161,102 230,224 v 588 h -369 q -359,0 -525,-152 -165,-151 -165,-373 0,-169 117,-279 117,-109 323,-109 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-75"
+               d="m 2400,0 -25,347 Q 2044,-63 1450,-63 953,-63 642,228 331,519 328,1181 v 2200 h 903 V 1188 q 0,-282 134,-399 135,-117 344,-117 460,0 635,322 v 2387 h 906 V 0 Z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-64"
+               d="m 2438,0 -44,359 Q 2059,-63 1528,-63 900,-63 553,425 206,913 206,1650 v 66 q 0,772 347,1250 347,478 981,478 494,0 813,-366 v 1722 h 906 V 0 Z M 1113,1650 q 0,-406 143,-692 144,-286 500,-286 413,0 591,350 v 1341 q -172,350 -584,350 -354,0 -502,-288 -148,-287 -148,-775 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-65"
+               d="M 3225,550 Q 3063,319 2731,128 2400,-63 1906,-63 1119,-63 675,414 231,891 228,1566 v 131 q 0,766 426,1256 427,491 1152,491 728,0 1109,-457 382,-456 382,-1206 V 1397 H 1144 q 47,-328 259,-530 213,-201 560,-201 515,0 815,378 z M 1800,2716 q -287,0 -444,-194 -156,-194 -203,-506 h 1256 v 68 q -6,272 -151,452 -145,180 -458,180 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-20"
+               transform="scale(0.015625)"
+               d="" />
+            <path
+               id="Roboto-Bold-53"
+               d="m 2769,1194 q 0,228 -157,379 -156,152 -758,347 -601,196 -1038,505 -460,322 -460,916 0,572 472,922 472,350 1210,350 756,0 1212,-396 456,-395 456,-1008 h -937 q 0,288 -185,472 -184,185 -562,185 -369,0 -549,-155 -179,-155 -179,-373 0,-225 231,-375 231,-150 672,-285 747,-228 1129,-572 383,-343 383,-906 0,-597 -450,-930 Q 2809,-63 2059,-63 1606,-63 1184,96 763,256 491,587 219,919 219,1434 h 940 q 0,-415 248,-584 249,-169 652,-169 363,0 536,147 174,147 174,366 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-6f"
+               d="m 206,1722 q 0,737 419,1229 419,493 1181,493 772,0 1187,-493 416,-492 416,-1229 v -66 Q 3409,919 2993,428 2578,-63 1813,-63 1053,-63 636,415 219,894 206,1616 Z m 907,-66 q 0,-412 157,-701 158,-289 543,-289 378,0 535,287 158,288 158,769 0,403 -158,698 -157,296 -542,296 -381,0 -537,-294 -156,-294 -156,-766 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-6e"
+               d="m 1806,2713 q -384,0 -572,-325 V 0 H 331 v 3381 h 847 l 31,-387 q 363,450 972,450 478,0 772,-285 294,-284 297,-990 V 0 h -906 v 2156 q 0,325 -139,441 -139,116 -399,116 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-74"
+               d="M 2041,22 Q 1788,-63 1497,-63 1053,-63 790,168 528,400 528,938 V 2722 H 31 v 659 h 497 v 835 h 903 v -835 h 575 V 2722 H 1431 V 1031 q 0,-212 87,-281 88,-69 260,-69 138,0 263,25 z"
+               transform="scale(0.015625)" />
+          </defs>
+          <use
+             xlink:href="#Roboto-Bold-43"
+             id="use88" />
+          <use
+             xlink:href="#Roboto-Bold-6c"
+             x="65.478516"
+             id="use89" />
+          <use
+             xlink:href="#Roboto-Bold-61"
+             x="91.992188"
+             id="use90" />
+          <use
+             xlink:href="#Roboto-Bold-75"
+             x="145.60547"
+             id="use91" />
+          <use
+             xlink:href="#Roboto-Bold-64"
+             x="201.61133"
+             id="use92" />
+          <use
+             xlink:href="#Roboto-Bold-65"
+             x="258.00781"
+             id="use93" />
+          <use
+             xlink:href="#Roboto-Bold-20"
+             x="312.06055"
+             id="use94" />
+          <use
+             xlink:href="#Roboto-Bold-53"
+             x="336.96289"
+             id="use95" />
+          <use
+             xlink:href="#Roboto-Bold-6f"
+             x="398.4375"
+             id="use96" />
+          <use
+             xlink:href="#Roboto-Bold-6e"
+             x="454.98047"
+             id="use97" />
+          <use
+             xlink:href="#Roboto-Bold-6e"
+             x="510.98633"
+             id="use98" />
+          <use
+             xlink:href="#Roboto-Bold-65"
+             x="566.99219"
+             id="use99" />
+          <use
+             xlink:href="#Roboto-Bold-74"
+             x="621.04492"
+             id="use100" />
+        </g>
+      </g>
+      <g
+         id="text_10">
+        <!-- BgGPT -->
+        <g
+           style="fill:#ffffff"
+           transform="matrix(0.28,0,0,-0.28,63.799848,302.18729)"
+           id="g105">
+          <use
+             xlink:href="#Roboto-Bold-42"
+             id="use101" />
+          <use
+             xlink:href="#Roboto-Bold-67"
+             x="63.818359"
+             id="use102" />
+          <use
+             xlink:href="#Roboto-Bold-47"
+             x="120.94727"
+             id="use103" />
+          <use
+             xlink:href="#Roboto-Bold-50"
+             x="189.0625"
+             id="use104" />
+          <use
+             xlink:href="#Roboto-Bold-54"
+             x="253.61328"
+             id="use105" />
+        </g>
+      </g>
+      <g
+         id="text_11">
+        <!-- Claude Haiku -->
+        <g
+           style="fill:#ffffff"
+           transform="matrix(0.28,0,0,-0.28,697.73828,302.32292)"
+           id="g117">
+          <defs
+             id="defs105">
+            <path
+               id="Roboto-Bold-48"
+               d="M 3175,0 V 1950 H 1347 V 0 H 406 v 4550 h 941 V 2706 h 1828 v 1844 h 938 V 0 Z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-69"
+               d="m 341,4256 q 0,203 137,336 138,133 369,133 231,0 368,-133 138,-133 138,-336 0,-200 -138,-333 -137,-132 -368,-132 -231,0 -369,132 -137,133 -137,333 z m 962,-875 V 0 H 397 v 3381 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-6b"
+               d="M 2444,0 1575,1356 1253,1034 V 0 H 350 v 4803 h 903 V 2144 l 175,225 863,1012 H 3375 L 2156,1975 3484,0 Z"
+               transform="scale(0.015625)" />
+          </defs>
+          <use
+             xlink:href="#Roboto-Bold-43"
+             id="use106" />
+          <use
+             xlink:href="#Roboto-Bold-6c"
+             x="65.478516"
+             id="use107" />
+          <use
+             xlink:href="#Roboto-Bold-61"
+             x="91.992188"
+             id="use108" />
+          <use
+             xlink:href="#Roboto-Bold-75"
+             x="145.60547"
+             id="use109" />
+          <use
+             xlink:href="#Roboto-Bold-64"
+             x="201.61133"
+             id="use110" />
+          <use
+             xlink:href="#Roboto-Bold-65"
+             x="258.00781"
+             id="use111" />
+          <use
+             xlink:href="#Roboto-Bold-20"
+             x="312.06055"
+             id="use112" />
+          <use
+             xlink:href="#Roboto-Bold-48"
+             x="336.96289"
+             id="use113" />
+          <use
+             xlink:href="#Roboto-Bold-61"
+             x="407.66602"
+             id="use114" />
+          <use
+             xlink:href="#Roboto-Bold-69"
+             x="461.2793"
+             id="use115" />
+          <use
+             xlink:href="#Roboto-Bold-6b"
+             x="487.79297"
+             id="use116" />
+          <use
+             xlink:href="#Roboto-Bold-75"
+             x="541.21094"
+             id="use117" />
+        </g>
+      </g>
+      <g
+         id="text_12">
+        <!-- BgGPT -->
+        <g
+           style="fill:#ffffff"
+           transform="matrix(0.28,0,0,-0.28,63.799848,220.21396)"
+           id="g122">
+          <use
+             xlink:href="#Roboto-Bold-42"
+             id="use118" />
+          <use
+             xlink:href="#Roboto-Bold-67"
+             x="63.818359"
+             id="use119" />
+          <use
+             xlink:href="#Roboto-Bold-47"
+             x="120.94727"
+             id="use120" />
+          <use
+             xlink:href="#Roboto-Bold-50"
+             x="189.0625"
+             id="use121" />
+          <use
+             xlink:href="#Roboto-Bold-54"
+             x="253.61328"
+             id="use122" />
+        </g>
+      </g>
+      <g
+         id="text_13">
+        <!-- GPT4o -->
+        <g
+           style="fill:#ffffff"
+           transform="matrix(0.28,0,0,-0.28,778.59265,220.34958)"
+           id="g127">
+          <defs
+             id="defs122">
+            <path
+               id="Roboto-Bold-34"
+               d="m 175,1553 1897,2997 h 912 V 1713 h 516 V 984 H 2984 V 0 H 2081 V 984 H 216 Z m 897,160 h 1009 v 1615 l -62,-109 z"
+               transform="scale(0.015625)" />
+          </defs>
+          <use
+             xlink:href="#Roboto-Bold-47"
+             id="use123" />
+          <use
+             xlink:href="#Roboto-Bold-50"
+             x="68.115234"
+             id="use124" />
+          <use
+             xlink:href="#Roboto-Bold-54"
+             x="132.66602"
+             id="use125" />
+          <use
+             xlink:href="#Roboto-Bold-34"
+             x="194.53125"
+             id="use126" />
+          <use
+             xlink:href="#Roboto-Bold-6f"
+             x="251.9043"
+             id="use127" />
+        </g>
+      </g>
+      <g
+         id="text_14">
+        <!-- BgGPT -->
+        <g
+           style="fill:#ffffff"
+           transform="matrix(0.28,0,0,-0.28,63.799848,138.24062)"
+           id="g132">
+          <use
+             xlink:href="#Roboto-Bold-42"
+             id="use128" />
+          <use
+             xlink:href="#Roboto-Bold-67"
+             x="63.818359"
+             id="use129" />
+          <use
+             xlink:href="#Roboto-Bold-47"
+             x="120.94727"
+             id="use130" />
+          <use
+             xlink:href="#Roboto-Bold-50"
+             x="189.0625"
+             id="use131" />
+          <use
+             xlink:href="#Roboto-Bold-54"
+             x="253.61328"
+             id="use132" />
+        </g>
+      </g>
+      <g
+         id="text_15">
+        <!-- GPT4o-mini -->
+        <g
+           style="fill:#ffffff"
+           transform="matrix(0.28,0,0,-0.28,712.95453,138.37625)"
+           id="g142">
+          <defs
+             id="defs132">
+            <path
+               id="Roboto-Bold-2d"
+               d="M 2103,2316 V 1584 H 347 v 732 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-6d"
+               d="m 1806,2713 q -375,0 -553,-319 V 0 H 347 v 3381 h 850 l 31,-372 q 353,435 969,435 653,0 897,-516 347,516 1015,516 488,0 785,-288 297,-287 300,-987 V 0 h -906 v 2156 q 0,338 -136,447 -136,110 -371,110 -400,0 -559,-379 V 0 h -903 v 2150 q 0,334 -138,448 -137,115 -375,115 z"
+               transform="scale(0.015625)" />
+          </defs>
+          <use
+             xlink:href="#Roboto-Bold-47"
+             id="use133" />
+          <use
+             xlink:href="#Roboto-Bold-50"
+             x="68.115234"
+             id="use134" />
+          <use
+             xlink:href="#Roboto-Bold-54"
+             x="132.66602"
+             id="use135" />
+          <use
+             xlink:href="#Roboto-Bold-34"
+             x="194.53125"
+             id="use136" />
+          <use
+             xlink:href="#Roboto-Bold-6f"
+             x="251.9043"
+             id="use137" />
+          <use
+             xlink:href="#Roboto-Bold-2d"
+             x="308.44727"
+             id="use138" />
+          <use
+             xlink:href="#Roboto-Bold-6d"
+             x="347.26562"
+             id="use139" />
+          <use
+             xlink:href="#Roboto-Bold-69"
+             x="433.83789"
+             id="use140" />
+          <use
+             xlink:href="#Roboto-Bold-6e"
+             x="460.35156"
+             id="use141" />
+          <use
+             xlink:href="#Roboto-Bold-69"
+             x="516.35742"
+             id="use142" />
+        </g>
+      </g>
+      <g
+         id="text_16">
+        <!-- Чат предпочитания на български според GPT4o като съдия -->
+        <g
+           style="fill:#1a1a1a"
+           transform="matrix(0.37,0,0,-0.37,-61.724922,39.24)"
+           id="g196">
+          <defs
+             id="defs142">
+            <path
+               id="Roboto-Bold-427"
+               d="M 4041,4550 V 0 h -941 v 1728 q -450,-94 -894,-94 -812,0 -1294,362 -481,363 -481,1151 v 1403 h 941 V 3147 q 0,-441 208,-597 208,-156 626,-156 460,0 894,90 v 2066 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-430"
+               d="m 2306,0 q -56,119 -90,303 -328,-366 -853,-366 -485,0 -816,286 -331,286 -331,727 0,531 393,823 394,293 1166,293 h 403 v 197 q 0,234 -120,373 -120,139 -380,139 -484,0 -484,-406 H 291 q 0,440 390,757 391,318 1047,318 585,0 970,-297 386,-297 386,-891 V 750 q 7,-450 135,-697 V 0 Z m -747,628 q 229,0 389,101 161,102 230,224 v 588 h -369 q -359,0 -525,-152 -165,-151 -165,-373 0,-169 117,-279 117,-109 323,-109 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-442"
+               d="m 97,2659 v 722 H 3153 V 2659 H 2072 V 0 h -906 v 2659 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-43f"
+               d="M 350,0 V 3381 H 3288 V 0 H 2381 V 2653 H 1253 V 0 Z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-440"
+               d="m 2081,-63 q -506,0 -828,360 V -1300 H 347 v 4681 h 841 l 34,-328 q 322,391 850,391 644,0 983,-472 339,-472 339,-1244 v -65 Q 3394,925 3055,431 2716,-63 2081,-63 Z m -243,2776 q -422,0 -585,-329 V 1000 q 169,-334 591,-334 353,0 500,292 147,292 147,770 0,419 -152,702 -151,283 -501,283 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-435"
+               d="M 3225,550 Q 3063,319 2731,128 2400,-63 1906,-63 1119,-63 675,414 231,891 228,1566 v 131 q 0,766 426,1256 427,491 1152,491 728,0 1109,-457 382,-456 382,-1206 V 1397 H 1144 q 47,-328 259,-530 213,-201 560,-201 515,0 815,378 z M 1800,2716 q -287,0 -444,-194 -156,-194 -203,-506 h 1256 v 68 q -6,272 -151,452 -145,180 -458,180 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-434"
+               d="M 959,3381 H 3447 V 728 h 487 V -1019 H 3031 V 0 H 1025 V -1019 H 103 l 3,1747 h 288 q 315,338 420,656 105,319 117,866 z M 1456,728 h 1091 v 1906 h -703 l -13,-487 Q 1791,1266 1456,728 Z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-43e"
+               d="m 206,1722 q 0,737 419,1229 419,493 1181,493 772,0 1187,-493 416,-492 416,-1229 v -66 Q 3409,919 2993,428 2578,-63 1813,-63 1053,-63 636,415 219,894 206,1616 Z m 907,-66 q 0,-412 157,-701 158,-289 543,-289 378,0 535,287 158,288 158,769 0,403 -158,698 -157,296 -542,296 -381,0 -537,-294 -156,-294 -156,-766 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-447"
+               d="M 3200,3381 V 0 h -906 v 1066 q -256,-50 -469,-50 -722,0 -1136,311 -414,311 -414,989 v 1068 h 903 V 2316 q 0,-335 153,-452 153,-117 494,-117 234,0 469,50 v 1584 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-438"
+               d="m 1253,1297 1131,2084 h 904 V 0 H 2384 V 2088 L 1253,0 H 350 v 3381 h 903 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-43d"
+               d="M 2375,0 V 1300 H 1253 V 0 H 350 v 3381 h 903 V 2025 h 1122 v 1356 h 906 V 0 Z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-44f"
+               d="M 2266,0 V 1169 H 1697 L 1044,0 H 128 l 741,1325 q -635,291 -635,925 0,491 386,811 386,320 1058,320 H 3169 V 0 Z m 0,1800 v 859 h -588 q -275,0 -406,-141 -131,-140 -131,-296 0,-153 126,-288 127,-134 396,-134 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-431"
+               d="M 3447,1547 Q 3447,853 3036,393 2625,-66 1856,-66 1091,-66 677,432 263,931 263,1684 v 172 q 3,1232 420,1842 417,611 1108,758 334,72 482,152 149,80 149,261 h 728 q 0,-494 -266,-738 -265,-243 -921,-375 -391,-78 -630,-305 -239,-226 -324,-673 429,416 1016,416 688,0 1055,-450 367,-450 367,-1135 z m -1597,919 q -378,0 -531,-255 -153,-255 -153,-598 v -66 q 0,-369 153,-627 153,-257 537,-257 378,0 533,257 155,258 155,627 v 66 q 0,343 -155,598 -155,255 -539,255 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-44a"
+               d="m 103,2650 v 731 h 1872 v -987 h 678 q 672,-10 1045,-343 374,-332 374,-860 0,-519 -383,-855 Q 3306,0 2616,0 H 1069 V 2650 Z M 1975,725 h 641 q 300,0 428,139 128,139 128,324 0,196 -128,337 -128,141 -428,141 h -641 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-43b"
+               d="M 744,3381 H 3291 V 0 H 2388 V 2653 H 1591 L 1534,1613 Q 1478,734 1187,368 897,3 363,0 H 78 l -9,734 115,13 q 254,25 361,298 108,274 136,889 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-433"
+               d="M 2653,3381 V 2653 H 1250 V 0 H 347 v 3381 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-441"
+               d="m 1753,666 q 247,0 406,136 160,136 163,367 h 850 Q 3166,631 2761,284 2356,-63 1769,-63 984,-63 595,432 206,928 206,1647 v 87 q 0,716 387,1213 388,497 1173,497 622,0 1011,-357 389,-356 395,-965 h -850 q -3,247 -150,420 -147,174 -422,174 -394,0 -516,-296 -121,-295 -121,-773 0,-391 120,-686 120,-295 520,-295 z"
+               transform="scale(0.015625)" />
+            <path
+               id="Roboto-Bold-43a"
+               d="M 2409,0 1675,1247 H 1313 V 0 H 409 v 3381 h 904 V 2109 h 318 l 741,1272 H 3513 L 2406,1772 3613,0 Z"
+               transform="scale(0.015625)" />
+          </defs>
+          <use
+             xlink:href="#Roboto-Bold-427"
+             id="use143" />
+          <use
+             xlink:href="#Roboto-Bold-430"
+             x="69.53125"
+             id="use144" />
+          <use
+             xlink:href="#Roboto-Bold-442"
+             x="123.14453"
+             id="use145" />
+          <use
+             xlink:href="#Roboto-Bold-20"
+             x="174.07227"
+             id="use146" />
+          <use
+             xlink:href="#Roboto-Bold-43f"
+             x="198.97461"
+             id="use147" />
+          <use
+             xlink:href="#Roboto-Bold-440"
+             x="255.76172"
+             id="use148" />
+          <use
+             xlink:href="#Roboto-Bold-435"
+             x="312.06055"
+             id="use149" />
+          <use
+             xlink:href="#Roboto-Bold-434"
+             x="366.11328"
+             id="use150" />
+          <use
+             xlink:href="#Roboto-Bold-43f"
+             x="429.29688"
+             id="use151" />
+          <use
+             xlink:href="#Roboto-Bold-43e"
+             x="486.08398"
+             id="use152" />
+          <use
+             xlink:href="#Roboto-Bold-447"
+             x="542.62695"
+             id="use153" />
+          <use
+             xlink:href="#Roboto-Bold-438"
+             x="597.99805"
+             id="use154" />
+          <use
+             xlink:href="#Roboto-Bold-442"
+             x="654.78516"
+             id="use155" />
+          <use
+             xlink:href="#Roboto-Bold-430"
+             x="705.71289"
+             id="use156" />
+          <use
+             xlink:href="#Roboto-Bold-43d"
+             x="759.32617"
+             id="use157" />
+          <use
+             xlink:href="#Roboto-Bold-438"
+             x="816.06445"
+             id="use158" />
+          <use
+             xlink:href="#Roboto-Bold-44f"
+             x="872.85156"
+             id="use159" />
+          <use
+             xlink:href="#Roboto-Bold-20"
+             x="928.80859"
+             id="use160" />
+          <use
+             xlink:href="#Roboto-Bold-43d"
+             x="953.71094"
+             id="use161" />
+          <use
+             xlink:href="#Roboto-Bold-430"
+             x="1010.4492"
+             id="use162" />
+          <use
+             xlink:href="#Roboto-Bold-20"
+             x="1064.0625"
+             id="use163" />
+          <use
+             xlink:href="#Roboto-Bold-431"
+             x="1088.9648"
+             id="use164" />
+          <use
+             xlink:href="#Roboto-Bold-44a"
+             x="1145.8984"
+             id="use165" />
+          <use
+             xlink:href="#Roboto-Bold-43b"
+             x="1211.5234"
+             id="use166" />
+          <use
+             xlink:href="#Roboto-Bold-433"
+             x="1268.4082"
+             id="use167" />
+          <use
+             xlink:href="#Roboto-Bold-430"
+             x="1310.3027"
+             id="use168" />
+          <use
+             xlink:href="#Roboto-Bold-440"
+             x="1363.916"
+             id="use169" />
+          <use
+             xlink:href="#Roboto-Bold-441"
+             x="1420.2148"
+             id="use170" />
+          <use
+             xlink:href="#Roboto-Bold-43a"
+             x="1472.4121"
+             id="use171" />
+          <use
+             xlink:href="#Roboto-Bold-438"
+             x="1528.7598"
+             id="use172" />
+          <use
+             xlink:href="#Roboto-Bold-20"
+             x="1585.5469"
+             id="use173" />
+          <use
+             xlink:href="#Roboto-Bold-441"
+             x="1610.4492"
+             id="use174" />
+          <use
+             xlink:href="#Roboto-Bold-43f"
+             x="1662.6465"
+             id="use175" />
+          <use
+             xlink:href="#Roboto-Bold-43e"
+             x="1719.4336"
+             id="use176" />
+          <use
+             xlink:href="#Roboto-Bold-440"
+             x="1775.9766"
+             id="use177" />
+          <use
+             xlink:href="#Roboto-Bold-435"
+             x="1832.2754"
+             id="use178" />
+          <use
+             xlink:href="#Roboto-Bold-434"
+             x="1886.3281"
+             id="use179" />
+          <use
+             xlink:href="#Roboto-Bold-20"
+             x="1949.5117"
+             id="use180" />
+          <use
+             xlink:href="#Roboto-Bold-47"
+             x="1974.4141"
+             id="use181" />
+          <use
+             xlink:href="#Roboto-Bold-50"
+             x="2042.5293"
+             id="use182" />
+          <use
+             xlink:href="#Roboto-Bold-54"
+             x="2107.0801"
+             id="use183" />
+          <use
+             xlink:href="#Roboto-Bold-34"
+             x="2168.9453"
+             id="use184" />
+          <use
+             xlink:href="#Roboto-Bold-6f"
+             x="2226.3184"
+             id="use185" />
+          <use
+             xlink:href="#Roboto-Bold-20"
+             x="2282.8613"
+             id="use186" />
+          <use
+             xlink:href="#Roboto-Bold-43a"
+             x="2307.7637"
+             id="use187" />
+          <use
+             xlink:href="#Roboto-Bold-430"
+             x="2364.1113"
+             id="use188" />
+          <use
+             xlink:href="#Roboto-Bold-442"
+             x="2417.7246"
+             id="use189" />
+          <use
+             xlink:href="#Roboto-Bold-43e"
+             x="2468.6523"
+             id="use190" />
+          <use
+             xlink:href="#Roboto-Bold-20"
+             x="2525.1953"
+             id="use191" />
+          <use
+             xlink:href="#Roboto-Bold-441"
+             x="2550.0977"
+             id="use192" />
+          <use
+             xlink:href="#Roboto-Bold-44a"
+             x="2602.2949"
+             id="use193" />
+          <use
+             xlink:href="#Roboto-Bold-434"
+             x="2667.9199"
+             id="use194" />
+          <use
+             xlink:href="#Roboto-Bold-438"
+             x="2731.1035"
+             id="use195" />
+          <use
+             xlink:href="#Roboto-Bold-44f"
+             x="2787.8906"
+             id="use196" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs
+     id="defs196">
+    <clipPath
+       id="pb2883e1eff">
+      <rect
+         x="18.401049"
+         y="69.239998"
+         width="891.95288"
+         height="368.88"
+         id="rect196" />
+    </clipPath>
+  </defs>
+</svg>

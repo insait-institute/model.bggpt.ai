@@ -1,0 +1,178 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import LinkCard from '~/components/ui/LinkCard.astro';
+
+import imgRitranslation from '~/assets/images/research/ritranslation.png';
+import imgCatastrophicForgetting from '~/assets/images/research/arxiv-catastrophic-forgetting.png';
+import imgBggpt from '~/assets/images/research/arxiv-bggpt.png';
+
+import imgDeepMind from '~/assets/images/news/deepmind-gemmaverse.png';
+import imgGoogleDevBlog from '~/assets/images/news/google-devblog-gemma.png';
+import imgCosmosThrace from '~/assets/images/news/cosmosthrace-bggpt.webp';
+
+const metadata = {
+  title: 'Research',
+};
+
+const researchEn = [
+  {
+    title: 'Mitigating Catastrophic Forgetting in Language Transfer via Model Merging',
+    description:
+      'Proposes Branch-and-Merge (BaM), a technique that iteratively merges multiple models fine-tuned on subsets of training data to prevent catastrophic forgetting when adapting LLMs to new languages.',
+    href: 'https://arxiv.org/abs/2407.08699',
+    image: imgCatastrophicForgetting,
+    source: 'ACL',
+  },
+  {
+    title: 'Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets',
+    description:
+      'A fully automated framework for scalable, high-quality translation of datasets and benchmarks into 8 Eastern/Southern European languages using test-time compute scaling strategies.',
+    href: 'https://ritranslation.insait.ai/',
+    image: imgRitranslation,
+    source: 'arXiv',
+  },
+  {
+    title: 'BgGPT 1.0: Extending English-Centric LLMs to Other Languages',
+    description:
+      'Bulgarian-optimized versions of Google\'s Gemma-2 models, continually pretrained on over 100 billion tokens of Bulgarian and English text using Branch-and-Merge techniques.',
+    href: 'https://arxiv.org/abs/2412.10893',
+    image: imgBggpt,
+    source: 'arXiv',
+  },
+];
+
+const researchBg = [
+  {
+    title: 'Mitigating Catastrophic Forgetting in Language Transfer via Model Merging',
+    description:
+      'Представя Branch-and-Merge (BaM), техника за итеративно сливане на множество модели, фино настроени върху подмножества от тренировъчни данни, за предотвратяване на катастрофално забравяне при адаптиране на LLM към нови езици.',
+    href: 'https://arxiv.org/abs/2407.08699',
+    image: imgCatastrophicForgetting,
+    source: 'ACL',
+  },
+  {
+    title: 'Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets',
+    description:
+      'Напълно автоматизирана рамка за мащабируем, висококачествен превод на набори от данни и бенчмаркове на 8 източно/южноевропейски езика чрез стратегии за мащабиране на изчисленията по време на извод.',
+    href: 'https://ritranslation.insait.ai/',
+    image: imgRitranslation,
+    source: 'arXiv',
+  },
+  {
+    title: 'BgGPT 1.0: Extending English-Centric LLMs to Other Languages',
+    description:
+      'Оптимизирани за български версии на моделите Gemma-2 на Google, с продължително предобучение върху над 100 милиарда токена на български и английски текст чрез техниките Branch-and-Merge.',
+    href: 'https://arxiv.org/abs/2412.10893',
+    image: imgBggpt,
+    source: 'arXiv',
+  },
+];
+
+const newsEn = [
+  {
+    title: 'Robust Automatic Bulgarian Speech Recognition with INSAIT\'s BgGPT',
+    description:
+      'Cosmosthrace showcases how INSAIT\'s BgGPT powers robust automatic Bulgarian speech recognition, addressing limitations of default transcription models for Bulgarian.',
+    href: 'https://cosmosthrace.com/resources/company-news/robust-automatic-bulgarian-speech-recognition-with-insaits-bggpt',
+    image: imgCosmosThrace,
+    source: 'Cosmos Thrace',
+  },
+  {
+    title: 'Beyond English: How Gemma Open Models Are Bridging the Language Gap',
+    description:
+      'Google Developers Blog post featuring BgGPT as an example of how Gemma open models are being used to build more inclusive LLMs that bridge the language gap.',
+    href: 'https://developers.googleblog.com/en/building-more-inclusive-llms-using-gemma-open-models/',
+    image: imgGoogleDevBlog,
+    source: 'Google Developers Blog',
+  },
+  {
+    title: 'INSAIT Creates Leading Bulgarian-First LLM with Gemma 2',
+    description:
+      'BgGPT featured in the official Google DeepMind GemmaVerse as a leading Bulgarian-first LLM built on Gemma 2, outperforming larger models in Bulgarian tasks.',
+    href: 'https://deepmind.google/models/gemma/gemmaverse/insait/',
+    image: imgDeepMind,
+    source: 'Google DeepMind',
+  },
+];
+
+const newsBg = [
+  {
+    title: 'Надеждно автоматично разпознаване на българска реч с BgGPT на INSAIT',
+    description:
+      'Cosmosthrace демонстрира как BgGPT на INSAIT задвижва надеждно автоматично разпознаване на българска реч, преодолявайки ограниченията на стандартните модели за транскрипция.',
+    href: 'https://cosmosthrace.com/resources/company-news/robust-automatic-bulgarian-speech-recognition-with-insaits-bggpt',
+    image: imgCosmosThrace,
+    source: 'Cosmos Thrace',
+  },
+  {
+    title: 'Отвъд английския: Как отворените модели Gemma преодоляват езиковата бариера',
+    description:
+      'Публикация в блога на Google за разработчици, представяща BgGPT като пример за това как отворените модели Gemma се използват за изграждане на по-приобщаващи LLM.',
+    href: 'https://developers.googleblog.com/en/building-more-inclusive-llms-using-gemma-open-models/',
+    image: imgGoogleDevBlog,
+    source: 'Google Developers Blog',
+  },
+  {
+    title: 'INSAIT създава водещ LLM за български с Gemma 2',
+    description:
+      'BgGPT е представен в официалния GemmaVerse на Google DeepMind като водещ LLM за български, надминаващ по-големи модели в задачи на български.',
+    href: 'https://deepmind.google/models/gemma/gemmaverse/insait/',
+    image: imgDeepMind,
+    source: 'Google DeepMind',
+  },
+];
+---
+
+<Layout metadata={metadata}>
+  <!-- Research papers -->
+  <WidgetWrapper containerClass="max-w-7xl mx-auto">
+    <div data-lang-en style="display:none">
+      <Headline
+        tagline="About the Models"
+        title="Research Publications"
+      />
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {researchEn.map((item) => (
+          <LinkCard {...item} />
+        ))}
+      </div>
+    </div>
+    <div data-lang-bg>
+      <Headline
+        tagline="Повече за моделите"
+        title="Научни публикации"
+      />
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {researchBg.map((item) => (
+          <LinkCard {...item} />
+        ))}
+      </div>
+    </div>
+  </WidgetWrapper>
+
+  <!-- News / media -->
+  <WidgetWrapper containerClass="max-w-7xl mx-auto">
+    <div data-lang-en style="display:none">
+      <Headline
+        title='Articles & Features'
+      />
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {newsEn.map((item) => (
+          <LinkCard {...item} />
+        ))}
+      </div>
+    </div>
+    <div data-lang-bg>
+      <Headline
+        title="Статии и разработки"
+      />
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {newsBg.map((item) => (
+          <LinkCard {...item} />
+        ))}
+      </div>
+    </div>
+  </WidgetWrapper>
+</Layout>
