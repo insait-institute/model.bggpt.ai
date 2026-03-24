@@ -65,4 +65,13 @@ const seoProps: AstroSeoProps = merge(
 );
 ---
 
-<AstroSeo {...{ ...seoProps, openGraph: await adaptOpenGraphImages(seoProps?.openGraph, Astro.site) }} />
+{async () => {
+  const adaptedProps = { ...seoProps, openGraph: await adaptOpenGraphImages(seoProps?.openGraph, Astro.site) };
+  const ogImage = adaptedProps.openGraph?.images?.[0]?.url;
+  return (
+    <>
+      <AstroSeo {...adaptedProps} />
+      {ogImage && <meta name="twitter:image" content={ogImage} />}
+    </>
+  );
+}}
