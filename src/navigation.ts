@@ -4,7 +4,6 @@ import { nav, footer } from './i18n/translations';
 const hrefs = [
   getPermalink('/blog'),
   getPermalink('/research'),
-  'https://huggingface.co/collections/INSAIT-Institute/bggpt-gemma-3-685a5c099b4f0c4977f46488',
 ];
 
 export const headerData = {
