@@ -53,11 +53,20 @@
 
 #header.expanded nav {
   position: fixed;
-  top: 70px;
+  top: 120px;
   left: 0;
   right: 0;
   bottom: 70px !important;
-  padding: 0 5px;
+  padding: 0 12px;
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+#header.expanded > div > div:last-child {
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+  background-color: var(--aw-color-bg-page);
+}
+.dark #header.expanded > div > div:last-child {
+  background-color: var(--aw-color-bg-page-dark);
 }
 
 .dropdown:focus .dropdown-menu,
