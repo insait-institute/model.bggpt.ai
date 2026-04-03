@@ -52,7 +52,7 @@ export const hero = {
     title: 'Водещ изкуствен интелект за<br /><span class="text-primary">български език</span>',
     subtitle:
       '<strong>BgGPT 3.0</strong> — ново поколение отворени, мултимодални AI модели за български. По-бързи, по-интелигентни и с по-голям контекст — създадени от INSAIT за българските граждани и институции. Повече за BgGPT 3.0 моделите прочетете в блога <a href="/blog" class="text-primary underline">тук</a>.',
-    cta: 'Получи API достъп',
+    cta: 'Заяви API достъп',
     ctaSecondary: 'Изтегли от HuggingFace',
   },
 };
