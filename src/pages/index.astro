@@ -1,10 +1,17 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
 import { hero } from '~/i18n/translations';
 
 const huggingFaceHref =
   'https://huggingface.co/collections/INSAIT-Institute/bggpt-gemma-3';
+
+const appStoreImg = '~/assets/images/app-store.png';
+const appStoreHref = 'https://apps.apple.com/us/app/bggpt/id6759053181';
+
+const googlePlayImg = '~/assets/images/google-play.png';
+const googlePlayHref = 'https://play.google.com/store/apps/details?id=com.insait.bggpt';
 
 const metadata = {
   title: 'BgGPT',
@@ -16,7 +23,7 @@ const metadata = {
   <!-- Hero -->
   <section class="relative not-prose">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="py-12 md:py-20">
+      <div class="pt-12 md:pt-20">
         <div class="text-center max-w-5xl mx-auto">
           <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tighter mb-4 font-heading dark:text-gray-200">
             <span data-lang-en style="display:none" set:html={hero.en.title} />
@@ -40,5 +47,29 @@ const metadata = {
       </div>
     </div>
   </section>
+
+  <!-- Mobile App -->
+  <div class="text-center max-w-5xl mx-auto px-4 sm:px-6 mt-8 pb-6">
+    <div class="flex items-center gap-4 max-w-md mx-auto mb-4">
+      <div class="flex-1 h-px bg-gray-300 dark:bg-gray-600"></div>
+      <span class="text-sm text-primary font-semibold uppercase tracking-wider whitespace-nowrap" data-lang-en style="display:none">Mobile app</span>
+      <span class="text-sm text-primary font-semibold uppercase tracking-wider whitespace-nowrap" data-lang-bg>Мобилно приложение</span>
+      <div class="flex-1 h-px bg-gray-300 dark:bg-gray-600"></div>
+    </div>
+    <p class="text-xl text-muted mb-5 max-w-3xl mx-auto" data-lang-en style="display:none">
+      Download our free app for iOS and Android
+    </p>
+    <p class="text-xl text-muted mb-5 max-w-3xl mx-auto" data-lang-bg>
+      Изтеглете безплатното приложение на BgGPT за iOS и Android
+    </p>
+    <div class="flex justify-center items-center gap-4">
+      <a href={googlePlayHref} target="_blank" rel="noopener noreferrer" class="transition hover:opacity-80">
+        <Image src={googlePlayImg} alt="Get it on Google Play" width={180} />
+      </a>
+      <a href={appStoreHref} target="_blank" rel="noopener noreferrer" class="transition hover:opacity-80">
+        <Image src={appStoreImg} alt="Download on the App Store" width={180} />
+      </a>
+    </div>
+  </div>
 
 </Layout>
