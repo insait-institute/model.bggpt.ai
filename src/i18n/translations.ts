@@ -2,11 +2,11 @@ export type Lang = 'en' | 'bg';
 
 export const nav = {
   en: {
-    links: ['Blog', 'About the Models'],
+    links: ['Blog', 'About the Models', 'Documentation'],
     cta: 'Contact Us',
   },
   bg: {
-    links: ['Блог', 'Повече за моделите'],
+    links: ['Блог', 'Повече за моделите', 'Документация'],
     cta: 'Свържете се',
   },
 };
@@ -18,6 +18,7 @@ export const footer = {
     blog: 'Blog',
     news: 'News',
     huggingFaceModels: 'HuggingFace Models',
+    apiDocs: 'API Docs',
     apiAccess: 'API Access',
     insait: 'INSAIT',
     aboutInsait: 'About INSAIT',
@@ -31,6 +32,7 @@ export const footer = {
     blog: 'Блог',
     news: 'Новини',
     huggingFaceModels: 'HuggingFace модели',
+    apiDocs: 'API документация',
     apiAccess: 'API достъп',
     insait: 'INSAIT',
     aboutInsait: 'За INSAIT',

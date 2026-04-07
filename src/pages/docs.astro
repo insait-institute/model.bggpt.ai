@@ -1,0 +1,515 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { Code } from 'astro:components';
+
+
+const metadata = {
+  title: 'API Documentation',
+};
+
+const apiServer = 'https://api.bggpt.ai';
+const apiModel = 'bggpt-gemma-3-27b-fp8';
+
+const proseClasses = 'prose prose-md lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg prose-headings:scroll-mt-[180px] prose-li:my-0 prose-code:before:content-none prose-code:after:content-none prose-h2:border-t prose-h2:border-gray-200 prose-h2:dark:border-slate-700 prose-h2:pt-8 prose-h2:mt-12 prose-h2:text-2xl prose-h2:lg:text-3xl prose-h3:text-lg prose-h3:lg:text-xl prose-h3:text-muted prose-h3:dark:text-slate-400';
+---
+
+<Layout metadata={metadata}>
+  <section class="py-8 sm:py-16 lg:py-20 mx-auto">
+
+    <!-- EN -->
+    <div data-lang-en style="display:none">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading dark:text-gray-200">API Documentation</h1>
+        <p class="mt-4 text-xl text-muted dark:text-slate-400">Everything you need to integrate BgGPT into your application.</p>
+
+        <div class="mt-4 p-4 rounded-lg bg-gray-100 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-sm text-gray-700 dark:text-slate-300">
+          Don't have an API key? Fill out the <a href="https://bggpt.ai/contact?upgrade=true" class="font-semibold underline hover:text-gray-900 dark:hover:text-slate-100">access request form</a> and your key will be provisioned automatically.
+        </div>
+
+        <nav class="mt-6 flex flex-wrap gap-2">
+          <a href="#getting-started" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Getting Started</a>
+          <a href="#chat-completions" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Chat</a>
+          <a href="#streaming" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Streaming</a>
+          <a href="#tool-calling" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Tool Calling</a>
+          <a href="#vision" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Vision</a>
+          <a href="#model-info" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Model Info</a>
+        </nav>
+      </div>
+
+      <div class={"mx-auto px-6 sm:px-6 max-w-3xl " + proseClasses}>
+
+        <h2 id="getting-started">Getting Started</h2>
+        <p>The BgGPT API is fully compatible with the <strong>OpenAI SDK</strong>. Any library or tool that supports the OpenAI Chat Completions API works with BgGPT.</p>
+
+        <table>
+          <tbody>
+            <tr><td><strong>Endpoint</strong></td><td><code>{apiServer}/v1</code></td></tr>
+            <tr><td><strong>Model</strong></td><td><code>{apiModel}</code></td></tr>
+            <tr><td><strong>Auth</strong></td><td><code>Authorization: Bearer YOUR_API_KEY</code></td></tr>
+            <tr><td><strong>Context</strong></td><td>Up to 65,536 tokens</td></tr>
+            <tr><td><strong>Quantization</strong></td><td>FP8 dynamic (same quality, 2x faster)</td></tr>
+          </tbody>
+        </table>
+
+        <p>Install the OpenAI Python SDK:</p>
+        <Code code="pip install openai" lang="bash" theme="github-dark" />
+
+        <h2 id="chat-completions">Chat Completions</h2>
+
+        <h3>Python</h3>
+        <Code code={`from openai import OpenAI
+
+client = OpenAI(
+    base_url="${apiServer}/v1",
+    api_key="YOUR_API_KEY",
+)
+
+response = client.chat.completions.create(
+    model="${apiModel}",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Кога е основан Софийският университет?"}
+    ],
+    max_tokens=16384,
+    temperature=0.2,
+)
+print(response.choices[0].message.content)`} lang="python" theme="github-dark" />
+
+        <h3>curl</h3>
+        <Code code={`curl -X POST ${apiServer}/v1/chat/completions \\
+  -H "Content-Type: application/json" \\
+  -H "Authorization: Bearer YOUR_API_KEY" \\
+  -d '{
+    "model": "${apiModel}",
+    "messages": [
+      {"role": "user", "content": "Кога е основан Софийският университет?"}
+    ],
+    "max_tokens": 16384,
+    "temperature": 0.2
+  }'`} lang="bash" theme="github-dark" />
+
+        <h2 id="streaming">Streaming</h2>
+        <p>Set <code>stream=True</code> to receive tokens as they are generated:</p>
+        <Code code={`stream = client.chat.completions.create(
+    model="${apiModel}",
+    messages=[
+        {"role": "user", "content": "Кога е основан Софийският университет?"}
+    ],
+    max_tokens=1024,
+    stream=True,
+)
+
+for chunk in stream:
+    delta = chunk.choices[0].delta
+    if delta.content:
+        print(delta.content, end="", flush=True)`} lang="python" theme="github-dark" />
+
+        <h2 id="tool-calling">Tool Calling</h2>
+        <p>BgGPT supports OpenAI-compatible tool calling. Define tools as JSON schemas, and the model will decide when to call them.</p>
+
+        <h3>1. Define tools and send request</h3>
+        <Code code={`tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_weather",
+            "description": "Get the current weather for a city",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "city": {"type": "string", "description": "City name"},
+                    "unit": {"type": "string", "enum": ["celsius", "fahrenheit"]}
+                },
+                "required": ["city"]
+            }
+        }
+    }
+]
+
+response = client.chat.completions.create(
+    model="${apiModel}",
+    messages=[
+        {"role": "user", "content": "What's the weather in Sofia?"}
+    ],
+    tools=tools,
+    tool_choice="auto",
+)`} lang="python" theme="github-dark" />
+
+        <h3>2. Check for tool calls</h3>
+        <Code code={`message = response.choices[0].message
+
+if message.tool_calls:
+    for tool_call in message.tool_calls:
+        print(f"Function: {tool_call.function.name}")
+        print(f"Arguments: {tool_call.function.arguments}")
+else:
+    print(message.content)`} lang="python" theme="github-dark" />
+
+        <h3>3. Send tool results back</h3>
+        <Code code={`import json
+
+# After calling your function with the model's arguments:
+tool_result = {"temperature": 22, "unit": "celsius", "condition": "sunny"}
+
+response = client.chat.completions.create(
+    model="${apiModel}",
+    messages=[
+        {"role": "user", "content": "What's the weather in Sofia?"},
+        message,  # the assistant message with tool_calls
+        {
+            "role": "tool",
+            "tool_call_id": message.tool_calls[0].id,
+            "content": json.dumps(tool_result),
+        }
+    ],
+    tools=tools,
+)
+print(response.choices[0].message.content)`} lang="python" theme="github-dark" />
+
+        <p><strong>Supported <code>tool_choice</code> values:</strong></p>
+        <ul>
+          <li><code>"auto"</code> &mdash; model decides whether to call a tool (default)</li>
+          <li><code>"required"</code> &mdash; model must call at least one tool</li>
+          <li><code>"none"</code> &mdash; tool calling disabled for this request</li>
+        </ul>
+
+        <h2 id="vision">Vision</h2>
+        <p>BgGPT 3.0 is multimodal and can understand images. Send images as base64 data URLs.</p>
+
+        <h3>Base64 image</h3>
+        <Code code={`import base64
+
+with open("photo.jpg", "rb") as f:
+    b64 = base64.b64encode(f.read()).decode()
+
+response = client.chat.completions.create(
+    model="${apiModel}",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "Describe this image."},
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:image/jpeg;base64,{b64}"}
+                }
+            ]
+        }
+    ],
+    max_tokens=1024,
+)`} lang="python" theme="github-dark" />
+
+        <h2 id="model-info">Model Information</h2>
+        <ul>
+          <li><a href="https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT">BgGPT-Gemma-3-27B-IT</a> (based on <a href="https://huggingface.co/google/gemma-3-27b-it">gemma-3-27b-it</a>)</li>
+          <li>FP8 dynamic quantization &mdash; uses about half the memory for weights compared to BF16, with minimal quality loss</li>
+          <li>65,536 tokens context window (the base model supports up to 131,072)</li>
+          <li><strong>Capabilities:</strong>
+            <ul class="list-['◦']">
+              <li>Text generation</li>
+              <li>Instruction following</li>
+              <li>Tool calling</li>
+              <li>Vision (image understanding)</li>
+              <li>Multi-turn conversations</li>
+            </ul>
+          </li>
+          <li><strong>Read more about the model on the</strong> <a href="/blog/bggpt-3-release-en">BgGPT 3.0 blog</a></li>
+        </ul>
+
+        <h2 id="notes">Notes</h2>
+        <ul>
+          <li>The API is OpenAI-compatible. Any SDK or framework that supports OpenAI (LangChain, LlamaIndex, etc.) works with BgGPT by changing <code>base_url</code> and <code>api_key</code>.</li>
+          <li>Your API key can be managed in your <a href="https://bggpt.ai/settings">account settings</a>.</li>
+          <li>To request API access, use the <a href="https://bggpt.ai/contact?upgrade=true">API access request form</a>.</li>
+          <li>To run the model locally, see the <a href="https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT#vllm-with-fp8-dynamic-quantization">HuggingFace instructions</a>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- BG -->
+    <div data-lang-bg>
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading dark:text-gray-200">API документация</h1>
+        <p class="mt-4 text-xl text-muted dark:text-slate-400">Всичко необходимо за интеграция на BgGPT.</p>
+
+        <div class="mt-4 p-4 rounded-lg bg-gray-100 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-sm text-gray-700 dark:text-slate-300">
+          Нямате API ключ? Попълнете <a href="https://bggpt.ai/contact?upgrade=true" class="font-semibold underline hover:text-gray-900 dark:hover:text-slate-100">формуляра за заявка</a> и ключът Ви ще бъде предоставен автоматично.
+        </div>
+
+        <nav class="mt-6 flex flex-wrap gap-2">
+          <a href="#getting-started-bg" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Начало</a>
+          <a href="#chat-completions-bg" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Чат</a>
+          <a href="#streaming-bg" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Стрийминг</a>
+          <a href="#tool-calling-bg" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Функции</a>
+          <a href="#vision-bg" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Изображения</a>
+          <a href="#model-info-bg" class="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">Модел</a>
+        </nav>
+      </div>
+
+      <div class={"mx-auto px-6 sm:px-6 max-w-3xl " + proseClasses}>
+
+        <h2 id="getting-started-bg">Начало</h2>
+        <p>BgGPT API е напълно съвместим с <strong>OpenAI SDK</strong>. Всяка библиотека или инструмент, поддържащ OpenAI Chat Completions API, работи с BgGPT.</p>
+
+        <table>
+          <tbody>
+            <tr><td><strong>Адрес</strong></td><td><code>{apiServer}/v1</code></td></tr>
+            <tr><td><strong>Модел</strong></td><td><code>{apiModel}</code></td></tr>
+            <tr><td><strong>Автентикация</strong></td><td><code>Authorization: Bearer YOUR_API_KEY</code></td></tr>
+            <tr><td><strong>Контекст</strong></td><td>До 65 536 токена</td></tr>
+            <tr><td><strong>Квантизация</strong></td><td>FP8 dynamic</td></tr>
+          </tbody>
+        </table>
+
+        <p>Инсталирайте OpenAI Python SDK:</p>
+        <Code code="pip install openai" lang="bash" theme="github-dark" />
+
+        <h2 id="chat-completions-bg">Чат</h2>
+
+        <h3>Python</h3>
+        <Code code={`from openai import OpenAI
+
+client = OpenAI(
+    base_url="${apiServer}/v1",
+    api_key="YOUR_API_KEY",
+)
+
+response = client.chat.completions.create(
+    model="${apiModel}",
+    messages=[
+        {"role": "system", "content": "Ти си полезен асистент."},
+        {"role": "user", "content": "Кога е основан Софийският университет?"}
+    ],
+    max_tokens=16384,
+    temperature=0.2,
+)
+print(response.choices[0].message.content)`} lang="python" theme="github-dark" />
+
+        <h3>curl</h3>
+        <Code code={`curl -X POST ${apiServer}/v1/chat/completions \\
+  -H "Content-Type: application/json" \\
+  -H "Authorization: Bearer YOUR_API_KEY" \\
+  -d '{
+    "model": "${apiModel}",
+    "messages": [
+      {"role": "user", "content": "Кога е основан Софийският университет?"}
+    ],
+    "max_tokens": 16384,
+    "temperature": 0.2
+  }'`} lang="bash" theme="github-dark" />
+
+        <h2 id="streaming-bg">Стрийминг</h2>
+        <p>Задайте <code>stream=True</code>, за да получавате токените в реално време:</p>
+        <Code code={`stream = client.chat.completions.create(
+    model="${apiModel}",
+    messages=[
+        {"role": "user", "content": "Кога е основан Софийският университет?"}
+    ],
+    max_tokens=1024,
+    stream=True,
+)
+
+for chunk in stream:
+    delta = chunk.choices[0].delta
+    if delta.content:
+        print(delta.content, end="", flush=True)`} lang="python" theme="github-dark" />
+
+        <h2 id="tool-calling-bg">Извикване на функции</h2>
+        <p>BgGPT поддържа извикване на функции, съвместимо с OpenAI. Дефинирайте инструменти като JSON схеми и моделът ще реши кога да ги извика.</p>
+
+        <h3>1. Дефиниране на инструменти и заявка</h3>
+        <Code code={`tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_weather",
+            "description": "Взима текущото време за даден град",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "city": {"type": "string", "description": "Име на града"},
+                    "unit": {"type": "string", "enum": ["celsius", "fahrenheit"]}
+                },
+                "required": ["city"]
+            }
+        }
+    }
+]
+
+response = client.chat.completions.create(
+    model="${apiModel}",
+    messages=[
+        {"role": "user", "content": "Какво е времето в София?"}
+    ],
+    tools=tools,
+    tool_choice="auto",
+)`} lang="python" theme="github-dark" />
+
+        <h3>2. Проверка за извикани функции</h3>
+        <Code code={`message = response.choices[0].message
+
+if message.tool_calls:
+    for tool_call in message.tool_calls:
+        print(f"Функция: {tool_call.function.name}")
+        print(f"Аргументи: {tool_call.function.arguments}")
+else:
+    print(message.content)`} lang="python" theme="github-dark" />
+
+        <h3>3. Изпращане на резултатите обратно</h3>
+        <Code code={`import json
+
+# След извикване на вашата функция с аргументите от модела:
+tool_result = {"temperature": 22, "unit": "celsius", "condition": "sunny"}
+
+response = client.chat.completions.create(
+    model="${apiModel}",
+    messages=[
+        {"role": "user", "content": "Какво е времето в София?"},
+        message,  # съобщението от асистента с tool_calls
+        {
+            "role": "tool",
+            "tool_call_id": message.tool_calls[0].id,
+            "content": json.dumps(tool_result),
+        }
+    ],
+    tools=tools,
+)
+print(response.choices[0].message.content)`} lang="python" theme="github-dark" />
+
+        <p><strong>Поддържани стойности за <code>tool_choice</code>:</strong></p>
+        <ul>
+          <li><code>"auto"</code> &mdash; моделът решава дали да извика функция (по подразбиране)</li>
+          <li><code>"required"</code> &mdash; моделът трябва да извика поне една функция</li>
+          <li><code>"none"</code> &mdash; извикването на функции е изключено за тази заявка</li>
+        </ul>
+
+        <h2 id="vision-bg">Изображения</h2>
+        <p>BgGPT 3.0 е мултимодален и може да приема изображения. Изпратете ги в base64 формат.</p>
+
+        <h3>Base64 изображение</h3>
+        <Code code={`import base64
+
+with open("photo.jpg", "rb") as f:
+    b64 = base64.b64encode(f.read()).decode()
+
+response = client.chat.completions.create(
+    model="${apiModel}",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "Опиши това изображение."},
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:image/jpeg;base64,{b64}"}
+                }
+            ]
+        }
+    ],
+    max_tokens=1024,
+)`} lang="python" theme="github-dark" />
+
+        <h2 id="model-info-bg">Информация за модела</h2>
+        <ul>
+          <li><a href="https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT">BgGPT-Gemma-3-27B-IT</a> (базиран на <a href="https://huggingface.co/google/gemma-3-27b-it">gemma-3-27b-it</a>)</li>
+          <li>FP8 dynamic квантизация &mdash; използва около половината от паметта за тежестите спрямо BF16, с минимална загуба на качество</li>
+          <li>65 536 токена контекстов прозорец (базовият модел поддържа до 131 072)</li>
+          <li><strong>Възможности:</strong>
+            <ul class="list-['◦']">
+              <li>Генериране на текст</li>
+              <li>Следване на инструкции</li>
+              <li>Извикване на функции</li>
+              <li>Разбиране на изображения</li>
+              <li>Разговори с множество ходове</li>
+            </ul>
+          </li>
+          <li><strong>Прочетете повече за модела на </strong> <a href="/blog/bggpt-3-release-bg">Блог за BgGPT 3.0</a></li>
+        </ul>
+
+        <h2 id="notes-bg">Бележки</h2>
+        <ul>
+          <li>API-то е напълно съвместимо с OpenAI. Всяко SDK или рамка, поддържаща OpenAI (LangChain, LlamaIndex и др.), работи с BgGPT като се промени <code>base_url</code> и <code>api_key</code>.</li>
+          <li>API ключът може да се управлява в <a href="https://bggpt.ai/settings">настройките на профила Ви</a>.</li>
+          <li>Нямате API ключ? Попълнете <a href="https://bggpt.ai/contact?upgrade=true">формуляра за заявка</a> и ключът Ви ще бъде предоставен автоматично.</li>
+          <li>За локално стартиране на модела вижте <a href="https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT#vllm-with-fp8-dynamic-quantization">инструкциите в HuggingFace</a>.</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+</Layout>
+
+<style is:global>
+  .prose h3 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 0 !important;
+  }
+  .prose pre {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .prose p {
+    margin-bottom: 0.5rem !important;
+  }
+  .prose :not(pre) > code {
+    background: #f1f5f9 !important;
+    padding: 0.15rem 0.4rem !important;
+    border-radius: 0.25rem !important;
+    font-size: 0.875em !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+  .dark .prose :not(pre) > code {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+  }
+  .code-block-wrapper {
+    position: relative;
+  }
+  .code-block-wrapper .copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #a0aec0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.375rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 10;
+  }
+  .code-block-wrapper:hover .copy-btn {
+    opacity: 1;
+  }
+  .code-block-wrapper .copy-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+</style>
+
+<script>
+  document.querySelectorAll('pre').forEach((pre) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'code-block-wrapper';
+    pre.parentNode?.insertBefore(wrapper, pre);
+    wrapper.appendChild(pre);
+
+    const isBg = pre.closest('[data-lang-bg]') !== null;
+    const labelCopy = isBg ? 'Копирай' : 'Copy';
+    const labelDone = isBg ? 'Копирано!' : 'Copied!';
+
+    const btn = document.createElement('button');
+    btn.className = 'copy-btn';
+    btn.textContent = labelCopy;
+    btn.addEventListener('click', async () => {
+      const code = pre.querySelector('code');
+      await navigator.clipboard.writeText(code?.textContent ?? pre.textContent ?? '');
+      btn.textContent = labelDone;
+      setTimeout(() => { btn.textContent = labelCopy; }, 1500);
+    });
+    wrapper.appendChild(btn);
+  });
+</script>

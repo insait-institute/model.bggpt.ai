@@ -4,6 +4,7 @@ import { nav, footer } from './i18n/translations';
 const hrefs = [
   getPermalink('/blog'),
   getPermalink('/research'),
+  getPermalink('/docs'),
 ];
 
 export const headerData = {
@@ -25,6 +26,7 @@ export const footerDataEn = {
       links: [
         { text: footer.en.research, href: getPermalink('/research') },
         { text: footer.en.blog, href: getPermalink('/blog') },
+        { text: footer.en.apiDocs, href: getPermalink('/docs') },
         { text: footer.en.huggingFaceModels, href: huggingFaceHref },
       ],
     },
@@ -53,6 +55,7 @@ export const footerDataBg = {
       links: [
         { text: footer.bg.research, href: getPermalink('/research') },
         { text: footer.bg.blog, href: getPermalink('/blog') },
+        { text: footer.bg.apiDocs, href: getPermalink('/docs') },
         { text: footer.bg.huggingFaceModels, href: huggingFaceHref },
       ],
     },

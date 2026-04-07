@@ -33,15 +33,29 @@ const metadata = {
             <span data-lang-en style="display:none" set:html={hero.en.subtitle} />
             <span data-lang-bg set:html={hero.bg.subtitle} />
           </p>
-          <div class="flex flex-col sm:flex-row justify-center gap-4" data-lang-en style="display:none">
-            <Button variant="primary" text="Try BgGPT Chat" href="https://bggpt.ai" icon="tabler:message-chatbot" target="_blank" />
-            <Button variant="secondary" text={hero.en.cta} href="https://bggpt.ai/contact?upgrade=true" icon="tabler:api" target="_blank" />
-            <Button variant="secondary" text={hero.en.ctaSecondary} href={huggingFaceHref} icon="tabler:download" target="_blank" />
+          <div data-lang-en style="display:none">
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+              <Button variant="primary" text="Try BgGPT Chat" href="https://bggpt.ai" icon="tabler:message-chatbot" target="_blank" class="w-full sm:w-auto flex-shrink-0 whitespace-nowrap" />
+              <Button variant="secondary" text={hero.en.cta} href="https://bggpt.ai/contact?upgrade=true" icon="tabler:api" target="_blank" class="w-full sm:w-auto flex-shrink-0 whitespace-nowrap" />
+              <Button variant="secondary" text={hero.en.ctaSecondary} href={huggingFaceHref} icon="tabler:download" target="_blank" class="w-full sm:w-auto flex-shrink-0 whitespace-nowrap" />
+            </div>
+            <div class="mt-3 text-center">
+              <a href="/docs" class="text-sm text-muted hover:text-primary transition-colors">
+                Already have an API key? See documentation →
+              </a>
+            </div>
           </div>
-          <div class="flex flex-col sm:flex-row justify-center gap-4" data-lang-bg>
-            <Button variant="primary" text="Чат с BgGPT" href="https://bggpt.ai" icon="tabler:message-chatbot" target="_blank" />
-            <Button variant="secondary" text={hero.bg.cta} href="https://bggpt.ai/contact?upgrade=true" icon="tabler:api" target="_blank" />
-            <Button variant="secondary" text={hero.bg.ctaSecondary} href={huggingFaceHref} icon="tabler:download" target="_blank" />
+          <div data-lang-bg>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+              <Button variant="primary" text="Чат с BgGPT" href="https://bggpt.ai" icon="tabler:message-chatbot" target="_blank" class="w-full sm:w-auto flex-shrink-0 whitespace-nowrap" />
+              <Button variant="secondary" text={hero.bg.cta} href="https://bggpt.ai/contact?upgrade=true" icon="tabler:api" target="_blank" class="w-full sm:w-auto flex-shrink-0 whitespace-nowrap" />
+              <Button variant="secondary" text={hero.bg.ctaSecondary} href={huggingFaceHref} icon="tabler:download" target="_blank" class="w-full sm:w-auto flex-shrink-0 whitespace-nowrap" />
+            </div>
+            <div class="mt-3 text-center">
+              <a href="/docs" class="text-sm text-muted hover:text-primary transition-colors">
+                Вече имате API ключ? Вижте документацията →
+              </a>
+            </div>
           </div>
         </div>
       </div>
